@@ -81,7 +81,8 @@
 
 	// Port
 
-	$router -> registerRoute("/documentation/port/renpy", new View("renpy", ["port" => ["content" => $Parsedown->text(file_get_contents("docs/port/renpy.md")),"year" => $meta["year"]]], $meta));
+	$router -> registerRoute("/documentation/port", new View("port", ["port" => ["content" => $Parsedown->text(file_get_contents("docs/port/port.md")),"year" => $meta["year"]]], $meta));
+	$router -> registerRoute("/documentation/port/renpy", new View("port", ["port" => ["content" => $Parsedown->text(file_get_contents("docs/port/renpy.md")),"year" => $meta["year"]]], $meta));
 
 	$router -> listen();
 
