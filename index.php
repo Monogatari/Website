@@ -39,7 +39,7 @@
 
 	// Script
 
-	$router -> registerRoute("/documentation/script", new View("script", ["script" => ["content" => "", "year" => $meta["year"]]], $meta));
+	$router -> registerRoute("/documentation/script", new View("script", ["script" => ["content" => $Parsedown->text(file_get_contents("docs/script/script.md")), "year" => $meta["year"]]], $meta));
 	$router -> registerRoute("/documentation/script/audio", new View("script", ["script" => ["content" => $Parsedown->text(file_get_contents("docs/script/audio.md")), "year" => $meta["year"]]], $meta));
 	$router -> registerRoute("/documentation/script/characters", new View("script", ["script" => ["content" => $Parsedown->text(file_get_contents("docs/script/characters.md")), "year" => $meta["year"]]], $meta));
 	$router -> registerRoute("/documentation/script/choices", new View("script", ["script" => ["content" => $Parsedown->text(file_get_contents("docs/script/choices.md")), "year" => $meta["year"]]], $meta));
@@ -58,7 +58,7 @@
 
 	// Design
 
-	$router -> registerRoute("/documentation/design", new View("design", ["documentation" => ["year" => $meta["year"]]], $meta));
+	$router -> registerRoute("/documentation/design", new View("design", ["design" => ["content" => $Parsedown->text(file_get_contents("docs/design/design.md")), "year" => $meta["year"]]], $meta));
 	$router -> registerRoute("/documentation/design/classes", new View("design", ["design" => ["content" => $Parsedown->text(file_get_contents("docs/design/classes.md")), "year" => $meta["year"]]], $meta));
 	$router -> registerRoute("/documentation/design/data-attributes", new View("design", ["design" => ["content" => $Parsedown->text(file_get_contents("docs/design/data-attributes.md")), "year" => $meta["year"]]], $meta));
 	$router -> registerRoute("/documentation/design/icons", new View("design", ["design" => ["content" => $Parsedown->text(file_get_contents("docs/design/icons.md")), "year" => $meta["year"]]], $meta));

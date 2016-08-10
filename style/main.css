@@ -125,12 +125,35 @@ td, th {
     padding: 0.5em;
 }
 
+nav li i{
+	margin-right: 1em;
+}
 
+
+nav.side-m li {
+	text-align: left;
+	border-top: 1px solid rgba(255,255,255,0.20);
+}
+
+.nav ul li a:hover {
+	background: #ffffff;
+	color: #F16272;
+}
+
+nav.top-s li {
+	text-align: left;
+	border-top: 1px solid rgba(255,255,255,0.20);
+}
 
 /** Place here all Media Queries and it's styles.**/
 
 /** Default Style. Don't change. (320px) **/
-@media screen and  (max-width: 20em) {}
+@media screen and  (max-width: 20em) {
+	nav.top-s li {
+		text-align: left;
+		border-top: 1px solid rgba(255,255,255,0.20);
+	}
+}
 
 /** Extra Small Devices, Phones (480px) **/
 @media screen and (min-width : 30em) {
@@ -159,6 +182,10 @@ td, th {
 	p.desc {
 		max-width: 80%;
 		margin: 2em auto;
+	}
+
+	nav.top-s li i{
+		display: none;
 	}
 }
 
