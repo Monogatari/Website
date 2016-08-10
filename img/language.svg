@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="500px"
+   height="500px"
+   viewBox="0 0 500 500"
+   version="1.1"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="language.svg">
+  <metadata
+     id="metadata21">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1280"
+     inkscape:window-height="740"
+     id="namedview19"
+     showgrid="false"
+     inkscape:zoom="0.472"
+     inkscape:cx="250"
+     inkscape:cy="250"
+     inkscape:window-x="0"
+     inkscape:window-y="23"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Artboard-14" />
+  <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+  <title
+     id="title4">Oval 31 + Aあ</title>
+  <desc
+     id="desc6">Created with Sketch.</desc>
+  <defs
+     id="defs8" />
+  <g
+     id="Page-1"
+     stroke="none"
+     stroke-width="1"
+     fill="none"
+     fill-rule="evenodd"
+     sketch:type="MSPage">
+    <g
+       id="Artboard-14"
+       sketch:type="MSArtboardGroup">
+      <path
+         style="fill:#ff80ab"
+         d="M 250 0 A 250 250 0 0 0 0 250 A 250 250 0 0 0 250 500 A 250 250 0 0 0 500 250 A 250 250 0 0 0 250 0 z M 303 141.75 L 321.25 141.75 L 321.25 173.25 L 433 173.25 L 433 189.25 L 321.25 189.25 L 321.25 221.5 C 332.41667 219.33333 343.5 218.25 354.5 218.25 C 381.83333 218.25 403.25 224.33333 418.75 236.5 C 434.25 248.5 442 264.91667 442 285.75 C 442 304.25 435.58333 319.91667 422.75 332.75 C 409.91667 345.58333 392.25 354.08333 369.75 358.25 L 365.25 341.75 C 383.41667 338.25 397.66667 331.5 408 321.5 C 418.5 311.5 423.75 299.58333 423.75 285.75 C 423.75 264.08333 413.25 249.16667 392.25 241 C 381.25 273.16667 365.25 298.66667 344.25 317.5 C 323.41667 336.33333 302.66667 345.75 282 345.75 C 269.16667 345.75 259 341.91667 251.5 334.25 C 244.16667 326.41667 240.5 315.58333 240.5 301.75 C 240.5 284.58333 246 269.33333 257 256 C 268.16667 242.66667 283.5 232.75 303 226.25 L 303 189.25 L 249.5 189.25 L 249.5 173.25 L 303 173.25 L 303 141.75 z M 118.5332 159.74805 L 146.48633 159.74805 L 215.94531 342 L 190.31055 342 L 173.70898 295.24609 L 91.554688 295.24609 L 74.955078 342 L 48.953125 342 L 118.5332 159.74805 z M 132.44922 184.04102 L 99.001953 274.74023 L 166.01758 274.74023 L 132.44922 184.04102 z M 354.5 235 C 342.66667 235 331.58333 236.25 321.25 238.75 L 321.25 314.75 C 345.08333 297.41667 363.16667 271.33333 375.5 236.5 C 369 235.5 362 235 354.5 235 z M 303 244.5 C 289.16667 250.33333 278.33333 258.16667 270.5 268 C 262.66667 277.66667 258.75 288.33333 258.75 300 C 258.75 309.33333 260.91667 316.58333 265.25 321.75 C 269.58333 326.75 275.75 329.25 283.75 329.25 C 289.41667 329.25 295.83333 327.91667 303 325.25 L 303 244.5 z "
+         id="Oval-31" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="500px"
+   height="500px"
+   viewBox="0 0 500 500"
+   version="1.1"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="rocket.svg">
+  <metadata
+     id="metadata26">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1280"
+     inkscape:window-height="740"
+     id="namedview24"
+     showgrid="false"
+     inkscape:zoom="2.6700352"
+     inkscape:cx="203.05413"
+     inkscape:cy="183.3038"
+     inkscape:window-x="0"
+     inkscape:window-y="23"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+  <title
+     id="title4">Group</title>
+  <desc
+     id="desc6">Created with Sketch.</desc>
+  <defs
+     id="defs8" />
+  <circle
+     style="fill:#57c76a;fill-rule:evenodd;stroke:none;stroke-width:1"
+     r="250"
+     cy="250"
+     cx="250"
+     sketch:type="MSShapeGroup"
+     id="Oval-32" />
+  <path
+     style="fill:#3c3c3c;fill-rule:evenodd;stroke:none;stroke-width:1"
+     d="M 312 279.62891 L 312 329.62891 L 363.55469 329.62891 L 426 389 L 372.33203 279.62891 L 371.91602 280.15625 L 372 279.62891 L 312 279.62891 z "
+     id="Rectangle-12-Copy-2" />
+  <path
+     style="fill:#3c3c3c;fill-rule:evenodd;stroke:none;stroke-width:1"
+     d="M 127.66797 279.62891 L 74 389 L 136.44531 329.62891 L 188 329.62891 L 188 279.62891 L 128 279.62891 L 128.08398 280.15625 L 127.66797 279.62891 z "
+     id="Rectangle-12-Copy-3" />
+  <path
+     style="fill:#408bb5;fill-rule:evenodd;stroke:none;stroke-width:1"
+     inkscape:connector-curvature="0"
+     sketch:type="MSShapeGroup"
+     id="Oval-33"
+     d="m 178.55272,348.72509 c 13.60331,40.18474 42.046,38.2602 71.44728,38.2602 27.79736,0 57.52751,-4.49409 71.60803,-39.0237 3.27461,-8.03031 3.44907,-17.69006 4.47162,-29.33685 1.48187,-16.8784 0,-43.09826 0,-68.62474 0,-118.88067 -32.44916,-210 -76.07965,-210 -43.6305,0 -75.30476,96.37182 -75.30476,215.25249 0,38.77057 -2.72605,74.02455 3.85748,93.4726 z" />
+  <path
+     style="fill:#fbc440;fill-rule:evenodd;stroke:none;stroke-width:1"
+     inkscape:connector-curvature="0"
+     sketch:type="MSShapeGroup"
+     id="Oval-36"
+     d="m 249.98558,465 c 28.61908,0 51.67739,-39.00099 51.67739,-105.50322 0,-24.82755 -3.09187,6.73215 -8.80499,6.04599 -9.21624,-1.10688 -24.78268,-3.0209 -42.8724,-2.69406 -18.46425,0 -32.20446,2.54271 -41.24708,2.69406 -4.99206,0.0836 -5.40458,-9.9965 -6.54625,-4.38321 -0.20539,1.00987 -3.85522,-8.85622 -3.85522,-4.85657 0,66.50224 23.02947,108.69701 51.64855,108.69701 z" />
+  <path
+     style="fill:#e15c4b;fill-rule:evenodd;stroke:none;stroke-width:1"
+     inkscape:connector-curvature="0"
+     sketch:type="MSShapeGroup"
+     id="Oval-36-Copy"
+     d="m 249.9893,450.95993 c 21.23156,0 38.33777,-29.03894 38.33777,-78.55446 0,-18.48583 -2.29375,5.01255 -6.53213,4.50167 -6.83724,-0.82416 -18.38547,-2.24928 -31.80563,-2.00592 -13.69803,0 -23.89144,1.89322 -30.59987,2.00592 -3.70345,0.0622 -4.00948,-7.44309 -4.85645,-3.26361 -0.15237,0.75192 -2.86006,-6.59407 -2.86006,-3.61605 0,49.51552 17.08482,80.93245 38.31637,80.93245 z" />
+  <circle
+     style="fill:#3c3c3c;fill-rule:evenodd;stroke:none;stroke-width:1"
+     r="30"
+     cy="133"
+     cx="250"
+     sketch:type="MSShapeGroup"
+     id="Oval-34" />
+  <circle
+     style="fill:#ffffff;fill-rule:evenodd;stroke:none;stroke-width:1"
+     r="15"
+     cy="133"
+     cx="250"
+     sketch:type="MSShapeGroup"
+     id="Oval-35" />
+  <path
+     style="fill:#306888;fill-rule:evenodd;stroke:none;stroke-width:1"
+     inkscape:connector-curvature="0"
+     sketch:type="MSShapeGroup"
+     id="Rectangle-12"
+     d="m 198.94462,379.95729 c -0.78525,-0.25218 -0.6926,-0.85105 -1.4,-1.75829 -6.78229,-8.40616 -19.1417,-28.24171 -19.1417,-28.24171 l 143.19416,0 -20.41491,30.69075 c 0,0 -67.00619,-0.69075 -98.00376,-0.69075 -0.0196,0 -1.33083,0.5582 -2.38305,0 -0.25428,-0.13434 -1.54011,0.1 -1.85074,0 z" />
+</svg>

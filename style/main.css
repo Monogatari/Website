@@ -1,0 +1,235 @@
+/** Space for all imported Fonts **/
+
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+/** Main Style goes here**/
+
+body {
+	font-family: 'Lato', sans-serif;
+	color: rgb(66,66,66);
+	background: #F7F6F6;
+}
+
+p {
+	line-height: 1.5em;
+}
+
+.row {
+	width:100%;
+}
+
+
+.nav, .nav ul {
+	background: #F16272;
+	color: #ffffff;
+}
+
+div.logo {
+	padding: 1em 4em;
+	text-align: center;
+	margin-top: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h3 {
+	font-size: 1.2em;
+	text-align: center;
+}
+
+h1 {
+	font-size: 2.5em;
+	margin: 0.3em 0;
+}
+
+.wrapper h2 {
+	margin: 0.7em 0;
+	margin-top: 0;
+	font-size: 2.5em;
+	text-align: center;
+}
+
+.wrapper h3 {
+	text-align: left;
+	margin: 0.7em 0;
+}
+
+h1.logo {
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+	min-width: 100%;
+	width:100%;
+}
+
+img.logo {
+	max-width: auto;
+	min-width: auto;
+	width:auto;
+}
+
+.no-margin .col {
+	margin: 0;
+	padding: 1em;
+}
+
+.no-margin h2.col {
+	padding-bottom: 0;
+}
+
+.main {
+	margin: 0;
+}
+
+.main a, .wrapper a {
+	color: rgb(0,184,212);
+}
+
+.main h2 {
+	margin-top: 1em;
+}
+
+.main h2.exception {
+	margin-top: 0;
+}
+
+button.download {
+	background: rgb(0,184,212);
+	color: white;
+}
+
+p.desc {
+	text-align: center;
+}
+
+.phrase {
+	color: #FFFFFF;
+	padding: 2em;
+	-moz-box-shadow: inset 0 0 10px 0 #424242;
+	-webkit-box-shadow: inset 0 0 10px -2px #424242;
+	box-shadow: inset 0 0 10px -2px #424242;
+	text-align: center;
+	margin: 2em 0;
+}
+
+td, th {
+    border: 1px solid #424242;
+    padding: 0.5em;
+}
+
+
+
+/** Place here all Media Queries and it's styles.**/
+
+/** Default Style. Don't change. (320px) **/
+@media screen and  (max-width: 20em) {}
+
+/** Extra Small Devices, Phones (480px) **/
+@media screen and (min-width : 30em) {
+
+}
+
+/** Medium Screens, Tablets (601px) **/
+@media screen and (min-width: 37.56255em) {
+	.main {
+		padding: 1em;
+	}
+
+	h2 {
+		font-size: 1.9em;
+	}
+
+	h3 {
+		font-size: 1.5em;
+	}
+
+	h1 {
+		font-size: 3em;
+		margin: 0.3em 0;
+	}
+
+	p.desc {
+		max-width: 80%;
+		margin: 2em auto;
+	}
+}
+
+/** Medium Devices, Desktops (992px)**/
+@media screen and (min-width: 62em) {
+	.main {
+		padding: 2em;
+		padding-bottom: 0;
+	}
+
+	h2 {
+		font-size: 2.3em;
+	}
+
+	h3 {
+		font-size: 1.7em;
+	}
+
+	h1 {
+		font-size: 4em;
+		margin: 0.3em;
+	}
+
+	p.desc {
+		max-width: 50%;
+		margin: 2em auto;
+	}
+}
+
+/** HD Screen, Large Devices, Wide Screens (1200px) **/
+@media screen and (min-width: 75em) {
+	.no-margin img, img {
+		max-width: 70%;
+		min-width: 70%;
+		width: 70%;
+	}
+
+	.main {
+		padding: 3em;
+		padding-bottom: 0;
+	}
+
+	h1 {
+		font-size: 5em;
+		margin: 0.3em;
+		margin-top: 1em;
+	}
+
+	p.desc {
+		max-width: 50%;
+		margin: 2em auto;
+	}
+}
+
+/** Full HD Screen, Large Devices, Wide Screens (1920px) **/
+@media screen and (min-width: 120em) {
+
+}
+
+/** Retina Screen , Large Devices, Wide Screens(2560px) **/
+@media screen and (min-width: 160em) {
+
+}
+
+/** 4k Screens, Large Devices, Wide Screens (3840px) **/
+@media screen and (min-width: 240em) {
+
+}
+
+/** 5k Screens, Large Devices, Wide Screens (5120px) **/
+@media screen and (min-width: 320em) {
+
+}
+
+/** CSS for Printing **/
+@media print {
+
+}
