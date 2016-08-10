@@ -47,9 +47,11 @@
 	$router -> registerRoute("/documentation/script/javascript", new View("script", ["script" => ["content" => $Parsedown->text(file_get_contents("docs/script/javascript.md")), "year" => $meta["year"]]], $meta));
 	$router -> registerRoute("/documentation/script/labels", new View("script", ["script" => ["content" => $Parsedown->text(file_get_contents("docs/script/labels.md")), "year" => $meta["year"]]], $meta));
 	$router -> registerRoute("/documentation/script/messages", new View("script", ["script" => ["content" => $Parsedown->text(file_get_contents("docs/script/messages.md")), "year" => $meta["year"]]], $meta));
+	$router -> registerRoute("/documentation/script/notifications", new View("script", ["script" => ["content" => $Parsedown->text(file_get_contents("docs/script/notifications.md")), "year" => $meta["year"]]], $meta));
 	$router -> registerRoute("/documentation/script/scenes", new View("script", ["script" => ["content" => $Parsedown->text(file_get_contents("docs/script/scenes.md")), "year" => $meta["year"]]], $meta));
 	$router -> registerRoute("/documentation/script/split", new View("script", ["script" => ["content" => $Parsedown->text(file_get_contents("docs/script/split.md")), "year" => $meta["year"]]], $meta));
 	$router -> registerRoute("/documentation/script/text", new View("script", ["script" => ["content" => $Parsedown->text(file_get_contents("docs/script/text.md")), "year" => $meta["year"]]], $meta));
+	$router -> registerRoute("/documentation/script/vibration", new View("script", ["script" => ["content" => $Parsedown->text(file_get_contents("docs/script/vibration.md")), "year" => $meta["year"]]], $meta));
 	$router -> registerRoute("/documentation/script/video", new View("script", ["script" => ["content" => $Parsedown->text(file_get_contents("docs/script/video.md")), "year" => $meta["year"]]], $meta));
 
 	// Design

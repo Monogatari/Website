@@ -1,6 +1,6 @@
 ## Getting Started
 
-<div class="warning"> This documentation is still under revision.</div>
+<div class="warning md-depth-2"> This documentation is still under revision.</div>
 
 Any text editor should work for creating your game with Monogatari, even Windows NotePad, I recomend you to use [Atom](https://atom.io/) or [Brackets](http://brackets.io/).
 
@@ -8,6 +8,8 @@ If you have any doubt, problem or just want some help please contact me, I'll be
 
 ### Understanding the Parts
 You'll see many directories and files when you download Monogatari and you need to understand what every file is for.
+
+#### Directories
 
 | Directory | Contains |
 | ------------- | ------------- |
@@ -19,24 +21,28 @@ You'll see many directories and files when you download Monogatari and you need 
 | js || All the things that'll make your VN work |
 
 
-<p>Inside the js directory...</p>
+#### JS Directory
 
 | File | Contains |
 | ------------- | ------------- |
 | main.js || If you want to add more javascript, this is the file to do it! |
 | options.js || Initial settings of your game and engine settings. |
 | script.js || The main script of your game. (Here's where your story, characters, images etc are declared) |
+| strings.js || UI translations used for internationalization. |
 | monogatari.js || The engine itself, you may modify it but only if you know what you're doing. |
-| plugins.js || File for adding plugins. (Lazy loading, mailto and nice link scroll are added by default) |
-| aegis.js || Aegis library used in the engine. |
+| plugins.js || File for adding plugins.|
+| aegis.min.js || Aegis library used in the engine. |
+| jquery.min.js || jQuery library for user defined functionality. |
+| particles.min.js || Javascript Particles library. |
 
 
-<p>Inside the style directory...</p>
+#### Style Directory
 
 | File | Contains |
 | ------------- | ------------- |
 | main.css || Add your styling in this file. |
 | monogatari.css || File with the initial styling of Monogatari. |
+| csshake.min.css || CSS Shake Animations Library. |
 | animate.min.css || CSS Animations Library. |
 | font-awesome.min.css || CSS of Font Awesome. |
 | normalize.min.css || CSS Normalizer |
