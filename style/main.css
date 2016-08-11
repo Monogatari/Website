@@ -1,6 +1,6 @@
 /** Space for all imported Fonts **/
 
-@import url(http://fonts.googleapis.com/css?family=Lato);
+@import url(//fonts.googleapis.com/css?family=Lato);
 
 /** Main Style goes here**/
 
@@ -71,9 +71,13 @@ img {
 }
 
 img.logo {
-	max-width: auto;
-	min-width: auto;
+	max-width: initial;
+	min-width: initial;
 	width:auto;
+}
+
+a button {
+	cursor: pointer;
 }
 
 .no-margin .col {
@@ -145,6 +149,10 @@ nav.top-s li {
 	border-top: 1px solid rgba(255,255,255,0.20);
 }
 
+.offset {
+	margin-top: 2em;
+}
+
 /** Place here all Media Queries and it's styles.**/
 
 /** Default Style. Don't change. (320px) **/
@@ -153,6 +161,8 @@ nav.top-s li {
 		text-align: left;
 		border-top: 1px solid rgba(255,255,255,0.20);
 	}
+
+
 }
 
 /** Extra Small Devices, Phones (480px) **/
@@ -186,6 +196,10 @@ nav.top-s li {
 
 	nav.top-s li i{
 		display: none;
+	}
+
+	.offset {
+		margin-top: 0;
 	}
 }
 
