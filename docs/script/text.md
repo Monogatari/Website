@@ -13,7 +13,7 @@ The say statement is used... well, for a character to say something. The syntax 
 It also accepts HTML, so you can show many things in a text like the Font Awesome icons.
 
 ```javascript
-"e The &lt;span class='fa fa-arrow-left'&gt;&lt;/span&gt; button is the back button, press it to return to a previous state of the game.",
+"e The <span class='fa fa-arrow-left'></span> button is the back button, press it to return to a previous state of the game.",
 ```
 
 If no character identifier is given, it will be considered as a narration and no name will be shown.

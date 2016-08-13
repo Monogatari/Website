@@ -84,11 +84,23 @@
 		<!-- build:scripts -->
 		<script src="js/aegis.min.js"></script>
 		<script src="js/prism.js"></script>
+		<script src="js/konami.js"></script>
 		<script src="js/main.js"></script>
 		<!-- endbuild -->
 
 	</head>
 	<body>
+		<div class="modal">
+			<div class="modal-content">
+				<h2>Other Engines</h2>
+				<p>Hey, have you checked out this other engines? They are awesome!</p>
+				<div class="row engines align-center">
+					{{> engines}}
+				</div>
+				<button data-action="close" class="md-depth-2">Close</button>
+			</div>
+
+		</div>
     	{>{content}<}
 	</body>
 </html>

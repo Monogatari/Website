@@ -153,6 +153,54 @@ nav.top-s li {
 	margin-top: 2em;
 }
 
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 99999; /* Sit on top */
+    left: 0;
+    top: 100%;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	transition: all 0.5s;
+
+}
+
+.modal.active{
+	display: block;
+	top: 0;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    text-align: center;
+}
+
+.modal button {
+	padding: 1em;
+	background: #fbbd02;
+	color: #fff;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+.engines a{
+	cursor: pointer;
+}
+
+.engines a:hover {
+	background: rgba(0,0,0,0.1);
+}
+
 /** Place here all Media Queries and it's styles.**/
 
 /** Default Style. Don't change. (320px) **/
