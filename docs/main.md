@@ -2,7 +2,19 @@
 
 <div class="warning md-depth-2"> This documentation is still under revision.</div>
 
-Any text editor should work for creating your game with Monogatari, even Windows NotePad, I recomend you to use [Atom](https://atom.io/) or [Brackets](http://brackets.io/).
+The first thing about Monogatari that you should probably know is that with it, your visual novel is a web page first and a game later. That means that Monogatari has been created specifically for the web, putting things like responsiveness first. You don't necessarily need to think of your game this way as well, but you'll certainly take the most out of Monogatari if you do.
+
+So, to develop in Monogatari you would need the same as to develop a webpage, you just need a text editor capable of editing HTML, Javascript and CSS, which means that pretty much any text editor should work, even Windows NotePad.
+
+Some recommended (and free) ones include:
+
+* [Atom](https://atom.io/)
+* [Brackets](http://brackets.io/)
+* [Visual Studio Code](https://code.visualstudio.com)
+
+### Getting Help
+
+While this documentation covers many parts of Monogatari's functioning, it does not cover everything you could actually do with it, but remember, your VN is a website now, so if you google something, for example if you want something to happen when someone clicks an image, you can google it as "javascript click image", there's no need to look for a Monogatari-specific answer.
 
 If you have any doubt, problem or just want some help please contact me, I'll be glad to help. You can contact me by <a href="hyuchia(at)gmail(dot)com" class="mailto"> Mail</a>, [Twitter](https://twitter.com/HyuchiaDiego) or [Google+](https://plus.google.com/+HyuchiaDiego/)
 
