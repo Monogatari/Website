@@ -132,7 +132,7 @@
 		case "/documentation/port":
 			$router -> registerRoute("/documentation/port", new View("port", ["port" => ["content" => $Parsedown->text(file_get_contents("docs/port/port.md")),"year" => $meta["year"]]], $meta));
 			break;
-		case "/documentation/port":
+		case "/documentation/port/renpy":
 			$router -> registerRoute("/documentation/port/renpy", new View("port", ["port" => ["content" => $Parsedown->text(file_get_contents("docs/port/renpy.md")),"year" => $meta["year"]]], $meta));
 			break;
 
