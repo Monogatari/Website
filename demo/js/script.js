@@ -9,10 +9,10 @@ var messages = {
 
 // Define the notifications used in the game
 var notifications = {
-	"Welcome": {
-		title: "Welcome",
-		body: "This is the Monogatari VN Engine",
-		icon: ""
+	"End": {
+		title: "Things just got real!",
+		body: "You finished Monogatari 101.",
+		icon: "img/icon_192x192.png"
 	}
 }
 
@@ -135,6 +135,7 @@ var script = {
 				"e This means you could also access real time data and a lot more with the APIs available for the web, even connect it to social media.",
 				"e As you can see, Monogatari is indeed not just a simple engine, besides it's open source and released under the MIT License so you can do anything you want!",
 				"e Try Monogatari, extend it, and create Visual Novels like no one has seen before!",
+				"notify End 2000",
 				"end"
 			],
 
@@ -147,6 +148,7 @@ var script = {
 				"e In the documentation you'll find all the examples you need to start writing.",
 				"e There are a lot of thigs you can do.",
 				"e Remember that Monogatari is open source, and released under the MIT Licens so you can use it for all your projects. I really hope to see your project very soon!",
+				"notify End 2000",
 				"end"
 			],
 
@@ -164,6 +166,7 @@ var script = {
 				"e Now, CSS will just open you a whole world of posibilities, for animations and designs!",
 				"e As you can see, you have lots of resources for designing your game and I can't wait to see what you create.",
 				"e Have fun designing awesome VNs!",
+				"notify End 2000",
 				"end"
 			],
 
@@ -177,6 +180,7 @@ var script = {
 				"e Sharing a game with friends is now even easier than before.",
 				"e That's really all I can tell you from now, Monogatari means endless posibilities and I'm sure you'll be soon seeing what I mean by that.",
 				"e Goodbye!, I hope you have lots of fun with projects built in Monogatari!",
+				"notify End 2000",
 				"end"
 			]
 	},
@@ -241,6 +245,7 @@ var script = {
 				"e Esto significa que también se puede acceder a información en tiempo real y mucho más con las APIs disponibles para la web, incluso conectarlo a redes sociales.",
 				"e Como puedes ver, Monogatari no es simplemente un engine, además de que es de código abierto y publicado bajo la licencia MIT para que puedas hacer lo que quieras!",
 				"e ¡Prueba Monogatari, extiendelo, y crea Novelas Visuales como nunca nadie ha visto!",
+				"notify End 2000",
 				"end"
 			],
 
@@ -253,6 +258,7 @@ var script = {
 				"e En la documentación encontrarás todos los ejemplos que necesitas para comenzar.",
 				"e Hay montones de cosas que puedes hacer.",
 				"e Recuerda que Monogatari es un proyecto de codigo abierto liberado bajo la licencia MIT asi que lo puedes usar para todos tus proyectos. ¡Espero ver tu proyecto pronto!",
+				"notify End 2000",
 				"end"
 			],
 
@@ -270,6 +276,7 @@ var script = {
 				"e Ahora, CSS abre las puertas a un mundo de posibilidades de animaciones y diseños.",
 				"e Como puedes ver, tienes muchos recursos para el diseño de tu juego y no puedo esperar a ver lo que crearás.",
 				"e ¡Diviertete diseñando Novelas Visuales increibles!",
+				"notify End 2000",
 				"end"
 			],
 
@@ -283,6 +290,7 @@ var script = {
 				"e Compartir un juego con tus amigos es ahora más facil que nunca.",
 				"e Eso es todo lo que te puedo decir por ahora, Monogatari significa posibilidades ilimitadas y estoy segura de que pronto verás a lo que me refiero.",
 				"e ¡Adios!, espero que te diviertas mucho con proyectos creados con Monogatari.",
+				"notify End 2000",
 				"end"
 			]
 
