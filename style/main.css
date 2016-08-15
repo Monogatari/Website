@@ -193,8 +193,13 @@ nav.top-s li {
 	cursor: pointer;
 }
 
+.engines {
+	margin: 0 auto;
+}
+
 .engines a{
 	cursor: pointer;
+	padding: 0 !important;
 }
 
 .engines a:hover {
