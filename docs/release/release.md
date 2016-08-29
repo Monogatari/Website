@@ -1,5 +1,13 @@
 ## Releasing your Game
 
+### Optimize your Game
+
+Make your game load a lot faster and run smoother by optimizing your CSS, Javascript and images.
+
+For CSS and Javascript well... minify... Duh. The smaller they are, the less bandwidth they'll consume and the faster your game will load.
+
+For images, optimize them so they don't take too long to load.
+
 ### Protecting Your Game
 
 #### Hide Your Script
