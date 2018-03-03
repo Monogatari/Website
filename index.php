@@ -51,6 +51,10 @@
 		case "/documentation/script/choices":
 			$router -> registerRoute("/documentation/script/choices", new View("script", ["script" => ["content" => $Parsedown->text(file_get_contents("docs/script/choices.md")), "year" => $meta["year"]]], $meta));
 			break;
+
+		case "/documentation/script/conditionals":
+			$router -> registerRoute("/documentation/script/conditionals", new View("script", ["script" => ["content" => $Parsedown->text(file_get_contents("docs/script/conditionals.md")), "year" => $meta["year"]]], $meta));
+			break;
 		case "/documentation/script/images":
 			$router -> registerRoute("/documentation/script/images", new View("script", ["script" => ["content" => $Parsedown->text(file_get_contents("docs/script/images.md")), "year" => $meta["year"]]], $meta));
 			break;
@@ -86,6 +90,9 @@
 			break;
 		case "/documentation/script/video":
 			$router -> registerRoute("/documentation/script/video", new View("script", ["script" => ["content" => $Parsedown->text(file_get_contents("docs/script/video.md")), "year" => $meta["year"]]], $meta));
+			break;
+		case "/documentation/script/wait":
+			$router -> registerRoute("/documentation/script/wait", new View("script", ["script" => ["content" => $Parsedown->text(file_get_contents("docs/script/wait.md")), "year" => $meta["year"]]], $meta));
 			break;
 		case "/documentation/design":
 			$router -> registerRoute("/documentation/design", new View("design", ["design" => ["content" => $Parsedown->text(file_get_contents("docs/design/design.md")), "year" => $meta["year"]]], $meta));
