@@ -8,10 +8,6 @@
 
 	class Text {
 
-		function __construct(){
-
-	    }
-
 	    public static function capitalize($text){
 		  return ucwords(strtolower($text));
 	    }
@@ -20,36 +16,6 @@
 		  similar_text($text1, $text2, $percent);
 		  return  $percent;
 	    }
-
-		/*public static function buildText($array, $wrapper){
-		    foreach($array as $key => $value){
-			    if(is_array($value)){
-				    foreach($value as $key2 => $value2){
-					    $wrapper = str_replace("@$key2", $value2, $wrapper);
-					}
-			    }else{
-				    $wrapper = str_replace("@$key", $value, $wrapper);
-			    }
-			}
-			return $wrapper;
-		}*/
-
-		public static function buildText($array, $wrapper){
-			$result = "";
-		    if(@$array[0] != null){
-			    foreach($array as $i){
-				    $result .= Text::buildText($i, $wrapper);
-			 	}
-			 	return $result;
-		    }else{
-		 		$string = $wrapper;
-		 		foreach($array as $key => $value){
-					$string = str_replace("@$key", $value, $string);
-			 	}
-			 	return $string;
-		    }
-		}
-
 
 	    public static function getSuffix($text, $key){
 	        $suffix = "";
@@ -66,7 +32,7 @@
 	    }
 
 	    public static function getAffixes($text, $key){
-	        return [$this -> getPrefix($string, $key), $this -> getSuffix($string, $key)];
+	        return [Text::getPrefix($string, $key), Text::getSuffix($string, $key)];
 	    }
 
 	    public static function getStringBetween($string, $start, $end){

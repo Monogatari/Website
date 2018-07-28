@@ -1,157 +1,126 @@
 <?php
 
-	/**
-	* ==============================
-	* Upload
-	* ==============================
-	*/
-
 	class Upload {
 
+		public static $extensions;
+		public static $maxSize;
 		private $file;
-		private $maxSize;
-		private $forbiddenCharacters;
-		private $allowesCharacters;
-		private $allowedExtencions;
+		private $size;
+		private $name;
+		private $path;
+		private $error;
+		private $extension;
 
-		function __construct($file, $path, $maxSize = 50000000){
-            $this -> allowedExtensions = [
-        		"images" => ["gif", "jpeg", "jpg", "png"],
-        		"files" => ["pdf", "docx", "ppt", "txt", "zip", "rar"]
-        	];
-        	$this -> file = $_FILES[$file];
-        	$this -> path = $path;
-            $this -> maxSize = $maxSize;
-            $this -> forbiddenCharacters = array("#", ":", "ñ", "í", "ó", "ú", "á", "é", "Í", "Ó", "Ú", "Á", "É", " ", "_");
-            $this -> allowedCharacters = array("", "", "n", "i", "o", "u", "a", "e", "I", "O", "U", "A", "E", "-", "-");
-        }
+		function __construct ($file, $path) {
+			$this -> file = $file;
+			$this -> path ($path);
+			$split = explode(".", $file["name"]);
+			$this -> extension = end($split);
+			$this -> name (str_replace (".{$this -> extension}", "", $this -> file["name"]));
+			$this -> error = $this -> file["error"];
+			$this -> size = $this -> file["size"];
 
-        public function isEmpty(){
-	        return empty($this -> file);
-        }
+			if ($this -> error > 0) {
+				throw new Exception ("The file was not uploaded correctly.<p><b>Error Code:</b> {$this -> error}</p>", 1);
+			}
 
-
-        private function isImage($index = ""){
-	        if($index === ""){
-		        $name = explode(".", $this -> file["name"]);
-		        $extension = end($name);
-		        return in_array($extension,  $this -> allowedExtensions["images"])
-					&& (($this -> file["type"] == "image/gif")
-	                 || ($this -> file["type"] == "image/jpeg")
-	                 || ($this -> file["type"] == "image/jpg")
-	                 || ($this -> file["type"] == "image/pjpeg")
-	                 || ($this -> file["type"] == "image/x-png")
-	                 || ($this -> file["type"] == "image/png"));
-	        }else{
-		        $name = explode(".", $this -> file["name"][$index]);
-		        $extension = end($name);
-				return in_array($extension,  $this -> allowedExtensions["images"])
-				&& (($this -> file["type"][$index] == "image/gif")
-                 || ($this -> file["type"][$index] == "image/jpeg")
-                 || ($this -> file["type"][$index] == "image/jpg")
-                 || ($this -> file["type"][$index] == "image/pjpeg")
-                 || ($this -> file["type"][$index] == "image/x-png")
-                 || ($this -> file["type"][$index] == "image/png"));
-	        }
-
-        }
-
-        private function isFile($index = ""){
-	        if($index === ""){
-		        $name = explode(".", $this -> file["name"]);
-		        $extension = end($name);
-				return in_array($extension,  $this -> allowedExtensions["files"]);
-	        }else{
-		        $name = explode(".", $this -> file["name"][$index]);
-		        $extension = end($name);
-				return in_array($extension,  $this -> allowedExtensions["files"]);
-	        }
-
-        }
-
-        private function validate($index = ""){
-	        if($index === ""){
-		         if ($this -> file["error"] > 0 || $this -> file["size"] > $this -> maxSize){
-					return false;
-				}
-
-				return $this -> isImage() || $this -> isFile();
-	        }else{
-		        if ($this -> file["error"][$index] > 0 || $this -> file["size"][$index] > $this -> maxSize){
-					return false;
-				}
-				return $this -> isImage($index) || $this -> isFile($index);
-	        }
-
-        }
-
-        public function rename($newName){
-	        $this -> file["name"] = str_replace($this -> forbiddenCharacters, $this -> allowedCharacters, $newName);
-        }
-
-        private function fixOrientation($file){
-	        if(exif_imagetype($file) == 2){
-                $exif = exif_read_data($file);
-            	if(array_key_exists('Orientation', $exif)){
-                	$orientation = $exif['Orientation'];
-                    $images_orig = ImageCreateFromJPEG($file);
-                    $rotate = "";
-					switch ($orientation) {
-					   case 3:
-					      $rotate = imagerotate($images_orig, 180, 0);
-					      break;
-					   case 6:
-					      $rotate = imagerotate($images_orig, -90, 0);
-					      break;
-					   case 8:
-					      $rotate = imagerotate($images_orig, 90, 0);
-					      break;
-					}
-					if($rotate != ""){
-	                    ImageJPEG($rotate, $file);
-	                    ImageDestroy($rotate);
-					}
-					ImageDestroy($images_orig);
-            	}
-            }
-        }
-
-        public function upload(){
-			$this -> file["name"] = str_replace($this -> forbiddenCharacters, $this -> allowedCharacters, $this -> file["name"]);
-			$name = explode(".", $this -> file["name"]);
-			$extension = end($name);
-			if($this -> validate()){
-				$location = $this -> path.$this -> file["name"];
-                move_uploaded_file($this -> file["tmp_name"], $location);
-                if($this -> file["type"] == "image/jpeg" || $this -> file["type"] == "image/jpg"){
-	                $this -> fixOrientation($location);
-                }
-                return $location;
+			if ($this -> size > self::$maxSize) {
+				throw new Exception ("The file exceeds the allowed upload size.<p><b>Size:</b> {$this -> size}</p>", 1);
 			}
         }
 
-        public function uploadAll(){
-	        $files = array();
-	        print_r($this -> file);
-			for($i = 0; $i < count($this -> file["name"]); $i++){
-				echo $i;
-				if($this -> validate($i)){
-					$final_name = str_replace($this -> forbiddenCharacters, $this -> allowedCharacters, $this -> file["name"][$i]);
-					$final_name_array = explode(".", $final_name);
-			    	$extension = end($final_name_array);
-			    	$location = $this -> path.$final_name;
-			    	move_uploaded_file($this -> file["tmp_name"][$i], $location);
-					if($this -> file["type"][$i] == "image/jpeg" || $this -> file["type"][$i] == "image/jpg"){
-	                	$this -> fixOrientation($location);
-                	}
-					array_push($files, $location);
-				}else{
-					continue;
-				}
-
+		public function name ($name = null) {
+			if ($name !== null) {
+				$this -> name = Text::toFriendlyUrl($name);
+			} else {
+				return "{$this -> name}.{$this -> extension}";
 			}
-			return $files;
+		}
+
+		public function path ($path = null) {
+			if ($path !== null) {
+				$this -> path = $path;
+			} else {
+				return $this -> path;
+			}
+		}
+
+		public static function extensions ($collection = null) {
+			if ($collection !== null) {
+				if (is_array ($collection)) {
+					self::$extensions = new Collection ($collection);
+				} else if (is_string ($collection)) {
+					return new Collection (self::$extensions -> get ($collection));
+				}
+			} else {
+				return self::$extensions;
+			}
+		}
+
+		public static function size ($size = null) {
+			if ($size !== null) {
+				self::$maxSize = $size * 1024 * 1024;
+			} else {
+				return self::$maxSize;
+			}
+		}
+
+		private function isImage () {
+			if (self::extensions () -> hasKey ("image")) {
+				return self::extensions ("image") -> contains ($this -> extension)
+				&& (($this -> file["type"] == "image/gif")
+	             || ($this -> file["type"] == "image/jpeg")
+	             || ($this -> file["type"] == "image/jpg")
+	             || ($this -> file["type"] == "image/pjpeg")
+	             || ($this -> file["type"] == "image/x-png")
+	             || ($this -> file["type"] == "image/png"));
+			} else {
+				return false;
+			}
         }
 
- 	}
+		private function isText () {
+			if (self::extensions () -> hasKey ("text")) {
+				return self::extensions ("text") -> contains ($this -> extension);
+			} else {
+				return false;
+			}
+		}
+
+		public function upload () {
+			$location = "{$this -> path ()}/{$this -> name ()}";
+			if ($this -> validate () === true) {
+	            move_uploaded_file ($this -> file["tmp_name"], $location);
+	            if($this -> file["type"] == "image/jpeg" || $this -> file["type"] == "image/jpg"){
+	                Image::fixOrientation ($location);
+	            }
+	            return $location;
+			} else {
+				return $location;
+			}
+        }
+
+		private function validate () {
+			if (FileSystem::exists ($this -> path ())) {
+				if (FileSystem::isWritable ($this -> path ())) {
+					if (!FileSystem::exists ("{$this -> path ()}/{$this -> name ()}")) {
+						if ($this -> isImage ()) {
+							return true;
+						} else {
+							throw new Exception ("The file type could not be detected or it is not allowed. <p><b>File:</b> {$this -> name ()}</p>", 1);
+						}
+					} else {
+						return false;
+					}
+				} else {
+					throw new Exception ("The specified path is not writable.<p><b>Specified Path:</b> {$this -> path ()}</p>", 1);
+				}
+
+			} else {
+				throw new Exception ("The specified path does not exist.<p><b>Specified Path:</b> {$this -> path ()}</p>", 1);
+			}
+        }
+
+	}
+
 ?>

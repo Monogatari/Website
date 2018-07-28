@@ -1,15 +1,25 @@
-$_ready(function(){
+'use strict';
 
-    $_(".nav .menu-icon").click(function(){
-		$_(this).parent().find("ul").toggleClass("active");
-		$_(this).toggleClass('fa-bars fa-times');
+const { $_ready, $_, Platform } = Artemis;
+
+// Register the service worker
+if (Platform.serviceWorkers ()) {
+	//navigator.serviceWorker.register ('service-worker.js');
+}
+
+$_ready (() => {
+
+	$_('.nav').on ('click', '*', function () {
+		console.log ($_(this).closest ('ul'));
+		$_(this).closest ('ul').toggleClass ('nav__content-list--active');
+		$_(this).toggleClass ('fa-bars fa-times');
 	});
 
-	$_(".nav li").click(function(){
-	    if($_(".menu-icon").isVisible()){
-	      $_(".menu-icon").toggleClass('fa-bars fa-times');
-	      $_(this).parent().parent().find("ul").toggleClass("active");
-	    }
+	$_('.nav li').click (function () {
+		if ($_('.nav__menu-icon').isVisible ()) {
+			$_('.nav__menu-icon').toggleClass ('fa-bars fa-times');
+			$_(this).closest ('ul').toggleClass ('nav__content-list--active');
+		}
 	});
 
 	var colors = ['#57C76A', '#FF80AB', '#80CBC4', '#ff872e', '#424242', '#FBC02D', '#F16272'];
@@ -20,11 +30,10 @@ $_ready(function(){
 	});
 
 	$_(".modal [data-action='close']").click(function(){
-		$_(".modal").removeClass("active");
+		$_(".modal").removeClass("modal--active");
 	});
 
 	var easter_egg = new Konami(function(){
-		$_(".modal").addClass("active");
+		$_(".modal").addClass("modal--active");
 	});
-
 });

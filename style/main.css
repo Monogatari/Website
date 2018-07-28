@@ -5,113 +5,64 @@
 /** Main Style goes here**/
 
 body {
+	overflow-x: hidden;
 	font-family: 'Lato', sans-serif;
-	color: rgb(66,66,66);
-	background: #F7F6F6;
-}
-
-p {
-	line-height: 1.5em;
-}
-
-.row {
-	width:100%;
-}
-
-
-.nav, .nav ul {
-	background: #F16272;
-	color: #ffffff;
-}
-
-div.logo {
-	padding: 1em 4em;
-	text-align: center;
-	margin-top: 2em;
-}
-
-h2 {
-	font-size: 1.5em;
-}
-
-h3 {
-	font-size: 1.2em;
-	text-align: center;
 }
 
 h1 {
-	font-size: 2.5em;
-	margin: 0.3em 0;
+	font-size: 3rem;
 }
 
-.wrapper h2 {
-	margin: 0.7em 0;
-	margin-top: 0;
-	font-size: 2.5em;
+.doc {
+	position: relative;
+	margin-top: 2rem;
+}
+
+.doc a,
+.features a,
+.platforms a,
+.contributors a {
+	color: rgb(0, 184, 212);
+}
+
+.back {
+	position: absolute;
+	width: 6em;
+	background: #fff;
+	padding: 1rem;
+}
+
+td,
+th {
+	border: 1px solid #424242;
+	padding: 0.5em;
+}
+
+.doc h2 {
 	text-align: center;
-}
-
-.wrapper h3 {
-	text-align: left;
 	margin: 0.7em 0;
 }
 
-.wrapper h4 {
-	margin: 1em 0;
+.doc h3,
+.doc h4 {
+	margin: 0.7em 0;
 }
 
-h1.logo {
-	margin: 0;
+.nav h1 {
+	font-weight: normal;
 }
 
-img {
-	max-width: 100%;
-	min-width: 100%;
-	width:100%;
+p {
+	line-height: 1.5rem;
 }
 
-img.logo {
-	max-width: initial;
-	min-width: initial;
-	width:auto;
+.nav__content-list__item {
+	overflow: visible;
 }
 
-a button {
-	cursor: pointer;
-}
-
-.no-margin .col {
-	margin: 0;
-	padding: 1em;
-}
-
-.no-margin h2.col {
-	padding-bottom: 0;
-}
-
-.main {
-	margin: 0;
-}
-
-.main a, .wrapper a {
-	color: rgb(0,184,212);
-}
-
-.main h2 {
-	margin-top: 1em;
-}
-
-.main h2.exception {
-	margin-top: 0;
-}
-
-button.download {
-	background: rgb(0,184,212);
-	color: white;
-}
-
-p.desc {
-	text-align: center;
+.nav__content-list__item:hover {
+	background: #ffffff;
+	color: #f16272;
 }
 
 .phrase {
@@ -124,99 +75,62 @@ p.desc {
 	margin: 2em 0;
 }
 
-td, th {
-    border: 1px solid #424242;
-    padding: 0.5em;
+.features img {
+	max-width: 100%;
+	min-height: 100%;
+	width: 15rem;
 }
 
-nav li i{
-	margin-right: 1em;
+.contributor {
+	border-radius: 100%;
+	object-fit: cover;
+	margin-bottom: 1rem;
 }
 
-
-nav.side-m li {
-	text-align: left;
-	border-top: 1px solid rgba(255,255,255,0.20);
+button.download {
+	background: rgb(0, 184, 212);
+	color: #ffffff;
+	padding: 1rem;
 }
 
-.nav ul li a:hover {
-	background: #ffffff;
-	color: #F16272;
+.nav {
+	background-color: #f16272;
+	color: #ffffff;
+	max-width: 100%;
 }
 
-nav.top-s li {
-	text-align: left;
-	border-top: 1px solid rgba(255,255,255,0.20);
+.features .row__column {
+	align-self: center;
 }
 
-.offset {
-	margin-top: 2em;
+.platforms img,
+.contributors img {
+	max-width: 100%;
+	min-height: 100%;
+	width: 8rem;
 }
 
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 99999; /* Sit on top */
-    left: 0;
-    top: 100%;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    -webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	transition: all 0.5s;
-
+.platforms h3 {
+	margin: 1rem 0;
 }
 
-.modal.active{
-	display: block;
-	top: 0;
+.nav--side__header {
+	flex-shrink: 0;
 }
 
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-    text-align: center;
-}
-
-.modal button {
+.warning {
+	color: #ff8f00;
+	border-left: 0.5em solid #f9a825;
+	background-color: #fff59d;
+	margin: 0.5em 0;
 	padding: 1em;
-	background: #fbbd02;
-	color: #fff;
-	margin: 0 auto;
-	cursor: pointer;
-}
-
-.engines {
-	margin: 0 auto;
-}
-
-.engines a{
-	cursor: pointer;
-	padding: 0 !important;
-}
-
-.engines a:hover {
-	background: rgba(0,0,0,0.1);
+	box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
 }
 
 /** Place here all Media Queries and it's styles.**/
 
 /** Default Style. Don't change. (320px) **/
-@media screen and  (max-width: 20em) {
-	nav.top-s li {
-		text-align: left;
-		border-top: 1px solid rgba(255,255,255,0.20);
-	}
-
-
-}
+@media screen and  (max-width: 20em) {}
 
 /** Extra Small Devices, Phones (480px) **/
 @media screen and (min-width : 30em) {
@@ -225,85 +139,30 @@ nav.top-s li {
 
 /** Medium Screens, Tablets (601px) **/
 @media screen and (min-width: 37.56255em) {
-	.main {
-		padding: 1em;
+	.hero {
+		padding: 0 6rem;
 	}
 
-	h2 {
-		font-size: 1.9em;
+	.hero h1 {
+		font-size: 3rem;
 	}
 
-	h3 {
-		font-size: 1.5em;
-	}
-
-	h1 {
-		font-size: 3em;
-		margin: 0.3em 0;
-	}
-
-	p.desc {
-		max-width: 80%;
-		margin: 2em auto;
-	}
-
-	nav.top-s li i{
-		display: none;
-	}
-
-	.offset {
+	.doc {
 		margin-top: 0;
 	}
 }
 
 /** Medium Devices, Desktops (992px)**/
 @media screen and (min-width: 62em) {
-	.main {
-		padding: 2em;
-		padding-bottom: 0;
-	}
-
-	h2 {
-		font-size: 2.3em;
-	}
-
-	h3 {
-		font-size: 1.7em;
-	}
-
-	h1 {
-		font-size: 4em;
-		margin: 0.3em;
-	}
-
-	p.desc {
-		max-width: 50%;
-		margin: 2em auto;
+	.hero h1 {
+		font-size: 4rem;
 	}
 }
 
 /** HD Screen, Large Devices, Wide Screens (1200px) **/
 @media screen and (min-width: 75em) {
-	.no-margin img, img {
-		max-width: 70%;
-		min-width: 70%;
-		width: 70%;
-	}
-
-	.main {
-		padding: 3em;
-		padding-bottom: 0;
-	}
-
-	h1 {
-		font-size: 5em;
-		margin: 0.3em;
-		margin-top: 1em;
-	}
-
-	p.desc {
-		max-width: 50%;
-		margin: 2em auto;
+	.hero h1 {
+		font-size: 5rem;
 	}
 }
 

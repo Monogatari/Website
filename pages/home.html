@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<!--Aegis Framework | MIT License | http://www.aegisframework.com/ -->
+
+<html lang="en" itemscope itemtype="http://schema.org/WebPage"> <!--Change the lang property to your web's language-->
+
+	<head prefix="og: http://ogp.me/ns#">
+
+		<title>{{_title}}</title><!--Up to 60-70 Characters. Optimal Format: Primary Keyword - Secondary Keyword | Brand Name-->
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="description" content="{{_description}}"><!--Page description. No longer than 155 characters.-->
+		<meta name="keywords" content="{{_keywords}}">
+		<meta name="author" content="{{_author}}"><!--Name of the author.-->
+		<meta name="theme-color" content="{{_color}}"><!--Theme color for browsers in hexadecimal format.-->
+		<base href="{{_domain}}">
+
+		<!--Facebook Meta Tags-->
+		<meta property="og:image" content="{{_domain}}assets/{{_shareimage}}"/> <!--URL of Image to show-->
+		<meta property="og:description" content="{{_description}}"/> <!--Page Description-->
+		<meta property="og:site_name" content="{{_title}}"/> <!--The Name Here-->
+		<meta property="og:url" content="{{_fullRoute}}"/> <!--The Web main URL-->
+		<meta property="og:title" content="{{_title}}"/><!--The Title Here-->
+
+		<!--Google Meta Tags-->
+		<meta itemprop="name" content="{{_title}}"><!--The Name or Title Here-->
+		<meta itemprop="description" content="{{_description}}"><!--Page Description-->
+		<meta itemprop="image" content="{{_domain}}assets/{{_shareimage}}"><!--URL of Image to show-->
+
+		<!--Twitter Meta Tags - You'll have to validate your website here: https://dev.twitter.com/docs/cards/validation/validator-->
+		<meta name="twitter:card" content="summary_large_image"> <!--Content type:summary, summary_large_image, photo, gallery, product, app, player-->
+		<meta name="twitter:domain" content="{{_domain}}"> <!--Your web's domain-->
+		<meta name="twitter:site" content="{{_twitter}}"> <!--@publisher-->
+		<meta name="twitter:title" content="{{_title}}"> <!--Page Title-->
+		<meta name="twitter:description" content="{{_description}}"> <!--Page description less than 200 characters-->
+		<meta name="twitter:creator" content="{{_twitter}}"> <!--@author-->
+		<meta name="twitter:image:src" content="{{_domain}}assets/{{_shareimage}}"><!--URL of Image to show-->
+
+		<!--START of Web Apps Tags (Delete if not necessary)-->
+
+			<!--Android Meta Tags-->
+			<meta name="mobile-web-app-capable" content="yes">
+			<link rel="icon" sizes="192x192" href="assets/icons/icon_192x192.png"> <!--192 x 192 Icon-->
+			<link rel="icon" sizes="128x128" href="assets/icons/icon_128x128.png"> <!--128 x 128 Icon-->
+
+			<!--Apple Meta Tags-->
+			<meta name="apple-mobile-web-app-title" content="{{_title}}"> <!--App Title or Name-->
+			<meta name="apple-mobile-web-app-capable" content="yes">
+			<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> <!--Styling for the iOS Status Bar-->
+			<link rel="apple-touch-icon" href="assets/icons/icon_60x60.png"> <!--60 x 60 Icon-->
+			<link rel="apple-touch-icon" sizes="76x76" href="assets/icons/icon_76x76.png"> <!--76 x 76 Icon-->
+			<link rel="apple-touch-icon" sizes="120x120" href="assets/icons/icon_120x120.png"> <!--120 x 120 Icon-->
+			<link rel="apple-touch-icon" sizes="152x152" href="assets/icons/icon_152x152.png"> <!--152 x 152 Icon-->
+			<link rel="apple-touch-icon" sizes="152x152" href="assets/icons/icon_167x167.png"> <!--167 x 167 Icon-->
+			<link rel="apple-touch-icon" sizes="152x152" href="assets/icons/icon_180x180.png"> <!--180 x 180 Icon-->
+
+			<!--Microsoft Tags-->
+			<meta name="msapplication-TileColor" content="{{_color}}"><!--Color of the tile on Windows. In hexadecimal format-->
+			<meta name="application-name" content="{{_title}}"/> <!-- App Title -->
+			<meta name="msapplication-tooltip" content="{{_title}}"/> <!--Small text on hover-->
+			<meta name="msapplication-starturl" content="http://"/> <!-- URL to start in -->
+			<meta name="msapplication-square70x70logo" content="assets/icons/icon-70x70.png" /><!--Image for Tile 70x70-->
+			<meta name="msapplication-square150x150logo" content="assets/icons/icon-150x150.png" /><!--Image for Tile 150x150-->
+			<meta name="msapplication-square310x310logo" content="assets/icons/icon-310x310.png" /><!--Image for Tile 310x310-->
+
+		<!--END of Web Apps Tags-->
+
+		<link rel="publisher" href="https://plus.google.com/{{_google}}"><!--Publisher's Google+ URL-->
+
+		<link rel="canonical" href="{{_domain}}"><!--Canonical URL of your webpage-->
+		<link rel="manifest" href="manifest.json">
+		<link rel="shortcut icon" href="assets/favicon.ico"/><!--Favicon. Good tool for creating one: http://xiconeditor.com/ Create all sizes.-->
+
+		<link rel="stylesheet" href="style/fontawesome.min.css">
+		<link rel="stylesheet" href="style/animate.min.css">
+		<link rel="stylesheet" href="style/kayros.min.css">
+		<link rel="stylesheet" href="style/main.css">
+
+		<script src="js/fontawesome.min.js"></script>
+		<script src="js/prism.js"></script>
+		<script src="js/konami.js"></script>
+		<script src="js/artemis.min.js"></script>
+		<script src="js/main.js"></script>
+
+	</head>
+	<body>
+		<div class="modal">
+			<div class="modal__content">
+				<h2>Other Engines</h2>
+				<p>Hey, have you checked out this other engines? They are awesome!</p>
+				<div class="row engines text--center">
+					{{> engines}}
+				</div>
+				<button data-action="close" class="card card--depth--2">Close</button>
+			</div>
+
+		</div>
+		{>{content}<}
+	</body>
+</html>

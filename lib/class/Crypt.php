@@ -1,74 +1,54 @@
 <?php
 
 	/**
-	* ==============================
-	* Crypt
-	* ==============================
-	*/
+	 * ==============================
+	 * Crypt
+	 * ==============================
+	 */
+
+	use Defuse\Crypto\Key;
+	use Defuse\Crypto\Crypto;
+	use Defuse\Crypto\Encoding;
 
 	class Crypt {
 
-		private $key;
-		private $iv;
-		private $td;
+		private static $key;
 
-		function __construct($key = ""){
-			$this -> td = mcrypt_module_open('rijndael-256', '', 'cbc', '');
-			$this -> iv = mcrypt_create_iv(mcrypt_enc_get_iv_size($this -> td), MCRYPT_DEV_URANDOM);
-			$this -> key = $key;
-	    }
+		public static function key ($key = null) {
 
-	    public function generateKey(){
-		    $chars = "abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_-=+;:,.?1234567890";
-			$key1 = substr(str_shuffle( $chars ), 0, 20 );
-			$key2 = substr(str_shuffle( $chars ), 0, 20 );
-		    $ks = mcrypt_enc_get_key_size($this -> td);
-			$key1 = md5($key1);
-		    $key2 = md5($key2);
-		    $key = substr($key1, 0, $ks/2) . substr(strtoupper($key2), (round(strlen($key2) / 2)), $ks/2);
-		    $key = substr($key.$key1.$key2.strtoupper($key1),0,$ks);
-		    return $key;
-	    }
-
-	    public function regenerateKey(){
-		    $this -> key = $this -> generateKey();
-	    }
-
-	    public function setKey($key){
-		    $this -> key = $key;
-	    }
-
-	    public function getIv(){
-		    return $this -> iv;
-	    }
-
-	    public function setIv($iv){
-		    $this -> iv = $iv;
-	    }
-
-		public function getKey(){
-			return $this -> key;
+			if ($key !== null) {
+				if (is_string ($key)) {
+					self::$key = Key::loadFromAsciiSafeString ($key);
+				} else {
+					self::$key = $key;
+				}
+			} else {
+				return self::$key;
+			}
 		}
 
-		public function encrypt($text){
-		    mcrypt_generic_init($this -> td, $this -> key, $this -> iv);
-		    $encrypted = mcrypt_generic($this -> td, $text);
-		    mcrypt_generic_deinit($this -> td);
-		    return $encrypted;
+		public static function randomKey () {
+			try {
+				return Key::createNewRandomKey ();
+			} catch (Exception $e) {
+				throw new Exception ($e, 1);
+			}
 		}
 
-		public function decrypt($text){
-		    mcrypt_generic_init($this -> td, $this -> key, $this -> iv);
-		    $decrypted = mdecrypt_generic($this -> td, $text);
-		    mcrypt_generic_deinit($this -> td);
-		    return $decrypted;
+		public static function encrypt ($plainText) {
+			return Crypto::encrypt ($plainText, self::$key);
 		}
 
-
-		function __destruct(){
-			mcrypt_module_close($this -> td);
+		public static function decrypt ($cipherText) {
+			return Crypto::decrypt ($cipherText, self::$key);
 		}
 
+		public static function hash ($algorithm, $text) {
+			try {
+				return hash ($algorithm, $text);
+			} catch (Exception $e) {
+				throw new Exception ($e, 1);
+			}
+		}
 	}
-
 ?>

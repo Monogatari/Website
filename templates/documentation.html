@@ -1,21 +1,14 @@
-<nav class="side-l side-m nav md-depth-2 fixed">
-	<img src="img/logo-white.svg" class="logo"></img>
-	<h1 class="logo">Monogatari Documentation</h1>
-  	<span class="menu-icon fa-bars fa"></span>
-	<ul>
-		<li><a href="/"><i class="fa fa-home"></i> Home</a></li>
-	  	<li><a href="/documentation/configuration/"><i class="fa fa-cogs"></i> Configuration</a></li>
-	  	<!--<li><a href="/documentation/contribute/"><i class="fa fa-github"></i> Contribute</a></li>-->
-	  	<li><a href="/documentation/design/"><i class="fa fa-paint-brush"></i> Design</a></li>
-	  	<!--<li><a href="/documentation/extend/"><i class="fa fa-rocket"></i> Extend</a></li>-->
-	  	<li><a href="/documentation/port/"><i class="fa fa-clone"></i> Port</a></li>
-	  	<li><a href="/documentation/release/"><i class="fa fa-upload"></i> Release</a></li>
-	  	<li><a href="/documentation/script/"><i class="fa fa-code"></i> Script</a></li>
-	</ul>
-</nav>
-
-<section class="wrapper offset-sn-m offset-sn-l padded-2">
-	{{content}}
-	<footer class="padded-1 align-center"><a href="https://hyuchia.com/">Hyuchia</a> &copy; {{year}}</footer>
-</section>
-	
+<nav class="card card--depth--2 nav nav--fixed nav--side nav--side--phablet nav--side--tablet nav--side--desktop nav--side--tablet nav--side--desktop-large">
+		<header class="nav__header nav--side__header">
+			<img src="assets/icons/icon-white.svg" class="nav__header__logo nav--side__header__logo">
+			<h1 class="nav__header__title nav--side__header__title">Monogatari</h1>
+		</header>
+		<i class="nav__menu-icon fas fa-bars"></i>
+		<ul class="nav__content-list nav__content-list--full">
+			{{menu}}
+		</ul>
+	</nav>
+<div class="wrapper--side-navigation--phablet wrapper--side-navigation--tablet wrapper--side-navigation--desktop wrapper--side-navigation--desktop-large padded-2 doc">
+	<!--<a href="{{back}}"><button class="back card"><span class="fas fa-arrow-left"></span> Back</button></a>-->
+	{{doc}}
+</div>
