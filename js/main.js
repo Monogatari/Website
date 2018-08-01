@@ -9,15 +9,12 @@ if (Platform.serviceWorkers ()) {
 
 $_ready (() => {
 
-	$_('.nav').on ('click', '*', function () {
-		console.log ($_(this).closest ('ul'));
+	$_('.nav__menu-icon').click (function () {
 		$_(this).closest ('ul').toggleClass ('nav__content-list--active');
-		$_(this).toggleClass ('fa-bars fa-times');
 	});
 
 	$_('.nav li').click (function () {
 		if ($_('.nav__menu-icon').isVisible ()) {
-			$_('.nav__menu-icon').toggleClass ('fa-bars fa-times');
 			$_(this).closest ('ul').toggleClass ('nav__content-list--active');
 		}
 	});
@@ -26,7 +23,7 @@ $_ready (() => {
 	$_('.phrase').style('background', colors[Math.floor(Math.random() * colors.length)]);
 
 	$_(".mailto").each(function(element){
-		element.href =  "mailto:" + element.href.replace("(dot)", ".").replace("(at)", "@").replace(window.location.href, "");
+		element.href = "mailto:" + element.href.replace("(dot)", ".").replace("(at)", "@").replace(window.location.href, "");
 	});
 
 	$_(".modal [data-action='close']").click(function(){

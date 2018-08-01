@@ -55,6 +55,11 @@
 		return new documentation ($category, $article);
 	});
 
+
+	Router::get ('/gallery', function () {
+		return new gallery ();
+	});
+
 	/**
 	 * Make the router listen to requests.
 	 *

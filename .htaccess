@@ -62,7 +62,7 @@ ServerSignature Off
 
 <IfModule mod_rewrite.c>
 	RewriteEngine On
-	RewriteBase /
+	RewriteBase /Website
 	RewriteCond %{REQUEST_URI} ^system.*
 	RewriteRule ^(.*)$ /index.php?/$1 [L]
 	RewriteCond %{REQUEST_FILENAME} !-f

@@ -21,8 +21,18 @@ h1 {
 .doc a,
 .features a,
 .platforms a,
-.contributors a {
+.contributors a,
+.game a {
 	color: rgb(0, 184, 212);
+}
+
+.game h3 {
+	font-size: 1.2rem;
+	padding-bottom: 0;
+}
+
+.game div.padded {
+	padding-top: 0;
 }
 
 .back {
@@ -30,6 +40,29 @@ h1 {
 	width: 6em;
 	background: #fff;
 	padding: 1rem;
+}
+
+.game {
+	display: flex;
+	flex-flow: column;
+}
+
+.game > div {
+	flex-grow: 1;
+}
+
+.game > a button {
+	width: 100%;
+	margin: 0;
+	padding: 1rem;
+	background: #00bcd4;
+	color: #fff;
+	border-radius: 0;
+}
+
+.game > a button:hover {
+	background: #fff;
+	color: #00bcd4;
 }
 
 td,
