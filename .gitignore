@@ -6,6 +6,8 @@
 .thumbs
 .Thumbs
 
+assets/covers/*
+
 # Package File
 *.zip
 *.rar
