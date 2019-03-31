@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="500px"
+   height="500px"
+   viewBox="0 0 500 500"
+   version="1.1"
+   id="svg2"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="gallery.svg">
+  <metadata
+     id="metadata20">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview18"
+     showgrid="false"
+     showguides="true"
+     inkscape:zoom="1.3350176"
+     inkscape:cx="61.99352"
+     inkscape:cy="215.62"
+     inkscape:window-x="1920"
+     inkscape:window-y="42"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+  <title
+     id="title4">Group</title>
+  <desc
+     id="desc6">Created with Sketch.</desc>
+  <defs
+     id="defs8" />
+  <circle
+     style="fill:#fbc02d;fill-rule:evenodd;stroke:none;stroke-width:1"
+     r="250"
+     cy="250"
+     cx="250"
+     sketch:type="MSShapeGroup"
+     id="Oval-39" />
+  <rect
+     style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:15;stroke-opacity:1"
+     rx="10"
+     height="250"
+     width="350"
+     y="125"
+     x="75"
+     sketch:type="MSShapeGroup"
+     id="Rectangle-14" />
+  <path
+     style="fill:#ffffff;fill-rule:evenodd;stroke:none;stroke-width:1;fill-opacity:1"
+     d="M 239.5 165 A 42.5 42.5 0 0 0 197 207.5 A 42.5 42.5 0 0 0 239.5 250 A 42.5 42.5 0 0 0 280.74609 217.53516 A 30 30 0 0 1 261 225 A 30 30 0 0 1 231 195 A 30 30 0 0 1 251.20703 166.68164 A 42.5 42.5 0 0 0 239.5 165 z "
+     id="Oval-40" />
+  <path
+     style="fill:#ffffff;fill-rule:evenodd;stroke:none;stroke-width:1;fill-opacity:1"
+     inkscape:connector-curvature="0"
+     sketch:type="MSShapeGroup"
+     id="Rectangle-15"
+     d="m 75,347.56592 c 0,-5.52817 1.069574,-14.36364 3.068281,-19.43314 0,0 -1.083977,0.3781 0.0064,-0.002 0.435731,-0.15203 0.298333,-0.47178 2.162909,-0.92801 15.618856,-3.82166 64.33274,-58.03333 91.05273,-51.20244 26.25163,6.71116 52.07802,63.68109 78.92971,57.4725 55.38193,-12.80528 77.10489,-108.55021 117.29266,-108.55021 19.67711,0 51.26624,56.02985 51.26624,56.02985 l 0,0 c 1.44978,2.17432 2.82522,8.40556 3.07242,13.92469 l 3.14137,70.13543 C 425.23978,370.52834 420.96135,375 415.4468,375 L 84.993266,375 C 79.474138,375 75,370.52061 75,364.99037 l 0,-17.42445 z" />
+</svg>

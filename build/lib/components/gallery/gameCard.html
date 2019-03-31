@@ -1,0 +1,14 @@
+<div class="row__column row__column--12 row__column--phone--12 row__column--phablet--6 row__column--tablet--4 row__column--desktop--3 card card--depth--2 game">
+	<img src="{{_space}}/assets/images/covers/{{cover}}" alt="{{name}}" class="">
+	<h3 class="padded text--center">{{name}}</h3>
+	<p class="text--center" data-content="creator"><a href="{{website}}" target="_blank">{{creator}}</a></p>
+	<div class="padded text--left">
+		<p class="text--justify">{{description}}</p>
+
+	</div>
+	<div class="padded text--justify" data-content="tags">
+		{{repeat tag for tags}}
+	</div>
+	<a href="{{url}}" target="_blank" class="card--depth--2"><button><span class="fas fa-play-circle"></span> Play</button></a>
+
+</div>

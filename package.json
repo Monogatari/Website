@@ -1,0 +1,40 @@
+{
+  "name": "ikaros",
+  "version": "0.1.0",
+  "main": "index.js",
+  "description": "",
+  "scripts": {
+    "start": "yarn watch:js && yarn watch:css",
+    "watch:js": "parcel watch ./src/index.js --out-file index.js --out-dir ./build/js --no-cache --public-url .",
+    "watch:css": "parcel watch ./src/index.css --out-file index.css --out-dir ./build/style --no-cache --no-source-maps",
+    "build": "yarn build:js && yarn build:css",
+    "build:js": "yarn build:index",
+    "build:index": "parcel build ./src/index.js --out-file index.js --out-dir ./build/js --no-cache --public-url .",
+    "build:login": "parcel build ./src/login.js --out-file login.js --out-dir ./build/js --no-cache --public-url .",
+    "build:admin": "parcel build ./src/admin.js --out-file admin.js --out-dir ./build/js --no-cache --public-url .",
+    "build:css": "parcel build ./src/index.css --out-file index.css --out-dir ./build/style --no-cache --no-source-maps"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-syntax-object-rest-spread": "^7.0.0",
+    "@babel/polyfill": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "autoprefixer": "^9.5.0",
+    "eslint": "^5.15.3",
+    "htmlhint": "^0.11.0",
+    "jsdoc": "^3.5.5",
+    "parcel": "^1.12.3",
+    "postcss-calc": "^7.0.1",
+    "postcss-scss": "^2.0.0",
+    "precss": "^4.0.0",
+    "sass": "^1.17.3",
+    "stylelint": "^9.10.1",
+    "stylelint-config-standard": "^18.2.0"
+  },
+  "dependencies": {
+    "@aegis-framework/artemis": "^0.3.17",
+    "@aegis-framework/kayros.css": "^0.4.2",
+    "@fortawesome/fontawesome-free": "^5.8.1",
+    "animate.css": "^3.7.0"
+  }
+}

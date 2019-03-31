@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Gravit.io -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   style="isolation:isolate"
+   viewBox="0 0 500 500"
+   width="500"
+   height="500"
+   version="1.1"
+   id="svg22"
+   sodipodi:docname="web.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata28">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs26" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview24"
+     showgrid="false"
+     inkscape:zoom="0.472"
+     inkscape:cx="250"
+     inkscape:cy="250"
+     inkscape:window-x="1920"
+     inkscape:window-y="42"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g16" />
+  <g
+     id="g20">
+    <g
+       id="g18">
+      <g
+         id="g16">
+        <circle
+           vector-effect="non-scaling-stroke"
+           cx="0"
+           cy="0"
+           r="1"
+           transform="matrix(250,0,0,250,250,250)"
+           fill="rgb(66,66,66)"
+           id="circle2" />
+        <path
+           d=" M 150 219 L 236.603 269 L 236.603 369 L 150 419 L 63.397 369 L 63.397 269 L 150 219 Z "
+           fill-rule="evenodd"
+           fill="rgb(241,104,43)"
+           id="path4" />
+        <path
+           d=" M 250 50 L 336.603 100 L 336.603 200 L 250 250 L 163.397 200 L 163.397 100 L 250 50 Z "
+           fill-rule="evenodd"
+           fill="rgb(228,162,39)"
+           id="path8" />
+        <path
+           d=" M 350 219 L 436.603 269 L 436.603 369 L 350 419 L 263.397 369 L 263.397 269 L 350 219 Z "
+           fill-rule="evenodd"
+           fill="rgb(22,115,182)"
+           id="path10" />
+      </g>
+    </g>
+  </g>
+</svg>

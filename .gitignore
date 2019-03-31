@@ -6,8 +6,6 @@
 .thumbs
 .Thumbs
 
-assets/covers/*
-
 # Package File
 *.zip
 *.rar
@@ -25,11 +23,10 @@ package-lock.json
 
 # Other
 cache
-src
-build
 release
 *.log
 .conf
 .ftpconfig
 .sftpconfig
+build/vendor
 vendor

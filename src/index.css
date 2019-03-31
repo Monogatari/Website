@@ -1,0 +1,16 @@
+/**
+ * Animation and Icon libraries.
+ */
+@import 'animate.css';
+@import './../node_modules/@fortawesome/fontawesome-free/css/svg-with-js.css';
+
+/**
+ * CSS Base Library from Aegis Framework
+ */
+@import '@aegis-framework/kayros.css';
+
+/**
+ * Website main styling
+ */
+
+@import './style/main.css';

@@ -1,8 +1,7 @@
 {
-    "require": {
-        "defuse/php-encryption": "^2.2",
-        "firebase/php-jwt": "^5.0",
-        "erusev/parsedown": "^1.7",
-        "erusev/parsedown-extra": "^0.7.1"
-    }
+	"scripts": {
+		"post-install-cmd": [
+			"cd build && composer install"
+		]
+	}
 }

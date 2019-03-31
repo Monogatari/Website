@@ -1,0 +1,472 @@
+/** Space for all imported Fonts **/
+
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+/** Main Style goes here**/
+
+:root {
+	--main-color: #f16272;
+	--text-color: #424242;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	line-height: 1.5rem;
+	text-align: center;
+}
+
+h1 {
+	font-size: 3rem;
+	padding: 0.5rem;
+	margin: 0;
+}
+
+h2 {
+	font-size: 1.5rem;
+}
+
+p a {
+	color: rgb(0, 184, 212);
+}
+
+section {
+	padding: 1rem;
+}
+
+small {
+	display: block;
+	font-size: 0.8rem;
+}
+
+.lead {
+	font-size: 1.2rem;
+}
+
+.hero {
+
+	& img {
+		max-height: 15rem;
+		filter: drop-shadow(0px 5px 12px rgba(0, 0, 0, 0.2));
+	}
+
+	& button {
+		background: rgb(0, 184, 212);
+		color: #ffffff;
+		padding: 1rem;
+	}
+}
+
+[data-content="game-gallery"] {
+	& .tag {
+		font-size: 0.8rem;
+		background: #fff;
+		border: 1px solid #e91e63;
+		color: #e91e63;
+		padding: 0.3rem 0.5rem;
+
+		.fa-tag,
+		.fa-times {
+			font-size: 0.8rem;
+		}
+
+		&.active {
+			background: #e91e63;
+			color: #fff;
+			box-shadow: 0 1.5px 4px rgba(0,0,0,.24),0 1.5px 6px rgba(0,0,0,.12);
+		}
+	}
+
+	& .game {
+		display: flex;
+		flex-flow: column;
+		align-self: stretch;
+
+		& h3 {
+			font-size: 1.2rem;
+			padding-bottom: 0;
+		}
+
+		& div.padded {
+			padding-top: 0;
+		}
+
+		& > div {
+			flex-grow: 1;
+		}
+
+		& [data-content="creator"] {
+			margin: 0;
+			font-size: 0.8rem;
+
+			& a {
+				color: #666;
+				font-weight: light;
+				padding-bottom: 0.15rem;
+				border-bottom: 1px dotted rgba(66, 66, 66, 0.8);
+
+				&:hover {
+					color: #424242;
+				}
+			}
+		}
+
+		& [data-content="tags"] {
+			display: flex;
+			flex-wrap: wrap;
+			align-content: flex-end;
+			justify-content: center;
+		}
+
+		& > a button {
+			width: 100%;
+			margin: 0;
+			padding: 1rem;
+			background: #00bcd4;
+			color: #fff;
+			border-radius: 0;
+
+			&:hover {
+				background: #fff;
+				color: #00bcd4;
+			}
+		}
+	}
+
+	& .search {
+		height: 4rem;
+		width: 100%;
+		border-radius: 50px;
+		font-size: 1.5rem;
+		padding: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	& .fixed {
+		position: fixed;
+		top: 0;
+	}
+
+	& [data-content="active-tags"] {
+		min-height: 3.5rem;
+		max-width: 100%;
+		white-space: nowrap;
+		overflow-x: scroll;
+
+		&:empty {
+			&:after {
+				content: 'No tag filter selected';
+				color: #ccc;
+				font-weight: bold;
+				font-size: 1.3rem;
+			}
+		}
+
+		& p {
+			color: #ccc;
+			font-weight: bold;
+		}
+	}
+}
+
+[data-content="contributor"] {
+	align-self: stretch;
+	overflow: hidden;
+
+	border-radius: 5px;
+
+	& img {
+		border-radius: 100%;
+		object-fit: contain;
+	}
+
+	& div.padded {
+		border-top: 1px solid rgba(66, 66, 66, 0.2);
+	}
+
+	& a {
+		word-break: break-word;
+	}
+
+	& > .row {
+		height: 100%;
+	}
+}
+
+[data-content="feature"] {
+	text-align: center;
+	align-self: stretch;
+
+	& img {
+		max-height: 5rem;
+		border-radius: 100%;
+	}
+
+	& h3 {
+		text-align: center;
+		padding-bottom: 1rem;
+		border-bottom: 1px solid rgba(66, 66, 66, 0.2);
+	}
+
+}
+
+[data-content="get-involved"] {
+	background-image: linear-gradient(rgba(255,255,255,.1) 0.2px, transparent 0.2px), linear-gradient(90deg, rgba(255,255,255,.1) 0.2px, transparent 0.2px), linear-gradient(rgba(255,255,255,.1) 0.2px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.1) 0.2px, transparent 1px);
+	background-size: 12px 12px, 12px 12px, 12px 12px, 12px 12px;
+	box-shadow: inset 0 0 2px 1px var(--text-color);
+	background-color: #3949ab;
+	color: #fff;
+
+	& h3 {
+		text-align: center;
+	}
+
+	& > div {
+		color: var(--text-color);
+		background: #fff;
+		align-self: stretch;
+
+		& div {
+			text-align: center;
+		}
+	}
+}
+
+blockquote {
+	color: #fff;
+	padding: 1em;
+	box-shadow: inset 0 0 10px -2px var(--text-color);
+	text-align: center;
+	margin: 0;
+	background: var(--random-color);
+
+	& a {
+		display: inline-block;
+	}
+}
+
+button {
+	border-radius: 10px;
+	font-weight: bold;
+	vertical-align: middle;
+
+	& span {
+		margin-left: 0.2rem;
+		height: 100%;
+		vertical-align: text-bottom;
+	}
+}
+
+.hidden {
+	display: none;
+}
+
+.nav {
+	background: var(--main-color);
+	color: #fff;
+
+	& .nav__header {
+		width: 90%;
+
+		&__title {
+			margin-left: 1rem;
+		}
+	}
+
+	& .nav__content-list__item {
+		border-left: 1px solid rgba(66, 66, 66, 0.1);
+		font-style: italics;
+
+		&:hover {
+			color: var(--main-color);
+			background: #fff;
+		}
+	}
+}
+
+.svg-inline--fa {
+	font-size: 1.5rem;
+}
+
+.broadcast {
+	display: flex;
+	justify-content: center;
+	background: #e91e63;
+	color: #fff;
+	box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
+	font-size: 1rem;
+	position: absolute;
+	width: 100%;
+	cursor: pointer;
+	z-index: 21;
+	padding: 1rem;
+}
+
+.twitter {
+	color: #00aced;
+
+	button& {
+		background: #00aced;
+		color: #fff;
+	}
+}
+
+.discord {
+	color: #7289da;
+
+	button& {
+		background: #7289da;
+		color: #fff;
+	}
+}
+
+.patreon {
+	color: #f96854;
+
+	button& {
+		background: #f96854;
+		color: #fff;
+	}
+}
+
+.github {
+	color: #333;
+
+	button& {
+		background: #333;
+		color: #fff;
+	}
+}
+
+.gitbook {
+	color: rgb(31, 101, 214);
+
+	button& {
+		background: rgb(31, 101, 214);
+		color: #fff;
+	}
+}
+
+.documentation {
+	color: var(--main-color);
+
+	button& {
+		background: var(--main-color);
+		color: #fff;
+	}
+}
+
+
+.donate {
+	border-radius: 10px;
+	font-weight: bold;
+	background: #ffa000;
+	color: #fff9c4;
+	vertical-align: middle;
+
+	& span {
+		margin-left: 0.2rem;
+	}
+
+	&:hover {
+		background: #ffa000;
+	}
+}
+
+
+/** Place here all Media Queries and it's styles.**/
+
+/** Phone **/
+@media screen and  (max-width: 480px) {
+
+}
+
+/** Phablet **/
+@media screen and (min-width: 601px) {
+	.hero {
+		padding: 0 6rem;
+	}
+
+	h1 {
+		font-size: 3rem;
+	}
+
+	h2 {
+		font-size: 1.6rem;
+	}
+
+	section {
+		padding: 2rem;
+	}
+
+	[data-content="game-gallery"] {
+		.search {
+			width: 90%;
+		}
+	}
+}
+
+
+/** Tablet **/
+@media screen and (min-width: 992px) {
+	h1 {
+		font-size: 4rem;
+	}
+
+	h2 {
+		font-size: 1.8rem;
+	}
+
+	.nav .nav__header {
+		width: 50%;
+	}
+
+	[data-content="game-gallery"] {
+		.search {
+			width: 60%;
+		}
+	}
+}
+
+@media screen and (min-width: 1050px) {
+
+}
+
+/** HD Screen, Large Devices, Wide Screens (1200px) **/
+@media screen and (min-width: 75em) {
+	h1 {
+		font-size: 5rem;
+	}
+
+	[data-content="game-gallery"] {
+		.search {
+			width: 50%;
+		}
+	}
+}
+
+/** Full HD Screen, Large Devices, Wide Screens (1920px) **/
+@media screen and (min-width: 120em) {
+	.header {
+		width: 30%;
+	}
+}
+
+/** Retina Screen , Large Devices, Wide Screens(2560px) **/
+@media screen and (min-width: 160em) {
+
+}
+
+/** 4k Screens, Large Devices, Wide Screens (3840px) **/
+@media screen and (min-width: 240em) {
+
+}
+
+/** 5k Screens, Large Devices, Wide Screens (5120px) **/
+@media screen and (min-width: 320em) {
+
+}
+
+/** CSS for Printing **/
+@media print {
+
+}
