@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "aegis-framework/ikaros",
-            "version": "0.1.0-rc.9",
+            "version": "0.1.0-rc.10",
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/AegisFramework/Ikaros.git",
-                "reference": "1b476c1e98721bf192c2d692cdeca6e271408ea3"
+                "reference": "ed221574f780d04a51b8fb32790ae9a908b8f5c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/AegisFramework%2FIkaros/repository/archive.zip?sha=1b476c1e98721bf192c2d692cdeca6e271408ea3",
-                "reference": "1b476c1e98721bf192c2d692cdeca6e271408ea3",
+                "url": "https://gitlab.com/api/v4/projects/AegisFramework%2FIkaros/repository/archive.zip?sha=ed221574f780d04a51b8fb32790ae9a908b8f5c9",
+                "reference": "ed221574f780d04a51b8fb32790ae9a908b8f5c9",
                 "shasum": ""
             },
             "require": {
@@ -48,7 +48,7 @@
                 "framework",
                 "library"
             ],
-            "time": "2019-03-31T01:50:01+00:00"
+            "time": "2019-03-31T04:18:10+00:00"
         },
         {
             "name": "defuse/php-encryption",

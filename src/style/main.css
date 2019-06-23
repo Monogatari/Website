@@ -192,6 +192,33 @@ small {
 	}
 }
 
+[data-content="open-source"] {
+	align-self: stretch;
+	overflow: hidden;
+
+	border-radius: 5px;
+
+	& img {
+		object-fit: contain;
+
+		&.round {
+			border-radius: 100%;
+		}
+	}
+
+	& div.padded {
+		border-top: 1px solid rgba(66, 66, 66, 0.2);
+	}
+
+	& a {
+		word-break: break-word;
+	}
+
+	& > .row {
+		height: 100%;
+	}
+}
+
 [data-content="feature"] {
 	text-align: center;
 	align-self: stretch;
@@ -224,6 +251,9 @@ small {
 		color: var(--text-color);
 		background: #fff;
 		align-self: stretch;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 
 		& div {
 			text-align: center;

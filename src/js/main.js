@@ -1,4 +1,9 @@
-import { $_ready, $_, Form, Request, Text } from '@aegis-framework/artemis';
+import { $_ready, $_, Platform } from '@aegis-framework/artemis';
+
+// Register the service worker
+if (Platform.serviceWorkers ()) {
+	navigator.serviceWorker.register ('service-worker' + '.js');
+}
 
 let tags = [];
 

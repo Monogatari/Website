@@ -15,26 +15,26 @@
     "build:css": "parcel build ./src/index.css --out-file index.css --out-dir ./build/style --no-cache --no-source-maps"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.0",
+    "@babel/core": "^7.4.5",
     "@babel/plugin-syntax-object-rest-spread": "^7.0.0",
-    "@babel/polyfill": "^7.4.0",
-    "@babel/preset-env": "^7.4.2",
-    "autoprefixer": "^9.5.0",
-    "eslint": "^5.15.3",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "autoprefixer": "^9.6.0",
+    "eslint": "^6.0.0",
     "htmlhint": "^0.11.0",
-    "jsdoc": "^3.5.5",
+    "jsdoc": "^3.6.2",
     "parcel": "^1.12.3",
     "postcss-calc": "^7.0.1",
     "postcss-scss": "^2.0.0",
     "precss": "^4.0.0",
-    "sass": "^1.17.3",
-    "stylelint": "^9.10.1",
-    "stylelint-config-standard": "^18.2.0"
+    "sass": "^1.21.0",
+    "stylelint": "^10.1.0",
+    "stylelint-config-standard": "^18.3.0"
   },
   "dependencies": {
-    "@aegis-framework/artemis": "^0.3.17",
-    "@aegis-framework/kayros.css": "^0.4.2",
-    "@fortawesome/fontawesome-free": "^5.8.1",
-    "animate.css": "^3.7.0"
+    "@aegis-framework/artemis": "^0.3.19",
+    "@aegis-framework/kayros.css": "^0.4.5",
+    "@fortawesome/fontawesome-free": "^5.9.0",
+    "animate.css": "^3.7.2"
   }
 }

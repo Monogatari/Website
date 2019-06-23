@@ -142,6 +142,12 @@
 				'contribution' => 'Idea Contributor & Tester'
 			],
 			[
+				'name' => 'Patience Daur',
+				'image' => 'patience_daur.png',
+				'website' => 'https://github.com/patiencedaur',
+				'contribution' => 'Russian Translator'
+			],
+			[
 				'name' => 'Piiritaja',
 				'image' => 'unknown.png',
 				'website' => 'https://github.com/KazutoSensei',
@@ -151,7 +157,7 @@
 				'name' => 'Remi Autor',
 				'image' => 'remi_author.gif',
 				'website' => 'https://newrem.com/',
-				'contribution' => 'Community Manager, Idea Contributor & Tester'
+				'contribution' => 'Community Manager, Idea Contributor, Documenter & Tester'
 			],
 			[
 				'name' => 'Ruolin Zheng',

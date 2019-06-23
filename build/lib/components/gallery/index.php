@@ -71,7 +71,7 @@
 					'website' => 'https://www.patreon.com/icstor/',
 					'cover' => 'milfy-city.png',
 					'creator' => 'ICSTOR',
-					'tags' => ['nsfw']
+					'tags' => ['nsfw', 'dating simulator']
 				],
 
 				[
@@ -84,6 +84,16 @@
 					'cover' => 'urban-voyeur.png',
 					'creator' => 'Cesar Games',
 					'tags' => ['nsfw']
+				],
+
+				[
+					'name' => 'Warm Marble',
+					'description' => 'A historical Bruce Lee fan-fiction visual novel dating simulator.',
+					'url' => 'https://newbeings.itch.io/warm-marble',
+					'website' => 'https://twitter.com/mickanio',
+					'cover' => 'warm-marble.jpg',
+					'creator' => 'Mickey Sanchez',
+					'tags' => ['dating simulator']
 				]
 			];
 
