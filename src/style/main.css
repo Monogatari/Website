@@ -284,6 +284,10 @@ button {
 		height: 100%;
 		vertical-align: text-bottom;
 	}
+
+	& > * {
+		vertical-align: middle !important;
+	}
 }
 
 .hidden {
@@ -296,6 +300,10 @@ button {
 
 	& .nav__header {
 		width: 90%;
+
+		& a {
+			display: flex;
+		}
 
 		&__title {
 			margin-left: 1rem;

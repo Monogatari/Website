@@ -9,7 +9,7 @@
 		<title>{{_title}}</title><!--Up to 60-70 Characters. Optimal Format: Primary Keyword - Secondary Keyword | Brand Name-->
 
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="{{_description}}"><!--Page description. No longer than 155 characters.-->
 		<meta name="keywords" content="{{_keywords}}">
 		<meta name="author" content="{{_author}}"><!--Name of the author.-->
@@ -72,8 +72,6 @@
 
 		{>{styles}<}
 
-		{>{scripts}<}
-
 		<style>
 			:root {
 				--random-color: {{random_color}};
@@ -92,21 +90,25 @@
 		</div>
 		<nav class="nav nav--top--tablet card--depth--2 nav--fixed">
 			<header class="nav__header nav--top__header">
-				<img src="assets/images/logo-white.svg" class="nav__header__logo nav--top__header__logo">
-				<h1 class="nav__header__title nav--top__header__title">Monogatari</h1>
+				<a href="/">
+					<img src="assets/images/logo-white.svg" class="nav__header__logo nav--top__header__logo" alt="Monogatari Logo">
+					<h1 class="nav__header__title nav--top__header__title" >Monogatari</h1>
+				</a>
 			</header>
 			<i class="nav__menu-icon fas fa-bars"></i>
 			<ul class="nav__content-list nav__content-list--full">
+				<li class="nav__content-list__item"><a href="/">Home</a></li>
 				<li class="nav__content-list__item"><a href="/demo">Play Demo</a></li>
 				<li class="nav__content-list__item"><a href="/gallery">Game Gallery</a></li>
-				<li class="nav__content-list__item"><a href="https://developers.monogatari.io/documentation">Documentation</a></li>
-				<li class="nav__content-list__item"><a href="/#get-involved" target="_blank">Get Involved</a></li>
-				<li class="nav__content-list__item"><a href="/contributors" target="_blank">Contributors</a></li>
+				<li class="nav__content-list__item"><a href="https://developers.monogatari.io/documentation" target="_blank" rel="noopener noreferrer">Documentation</a></li>
+				<li class="nav__content-list__item"><a href="/#get-involved">Get Involved</a></li>
+				<li class="nav__content-list__item"><a href="/contributors">Contributors</a></li>
 			</ul>
 		</nav>
 		{>{content}<}
 		<footer class="padded-2">
-			<a href="https://hyuchia.com/" target="_blank">Hyuchia &copy; {{_year}}</a>
+			<a href="https://hyuchia.com/" target="_blank" rel="noopener noreferrer">Hyuchia &copy; {{_year}}</a>
 		</footer>
+		{>{scripts}<}
 	</body>
 </html>

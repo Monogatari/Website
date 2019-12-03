@@ -54,7 +54,7 @@
 			[
 				'name' => 'Dragoon HP',
 				'image' => 'unknown.png',
-				'website' => 'https://urbnanvoyeur.co',
+				'website' => '#',
 				'contribution' => 'Idea Contributor & Tester'
 			],
 			[
@@ -112,15 +112,21 @@
 				'contribution' => 'Idea Contributor & Tester'
 			],
 			[
-				'name' => 'Lasagne',
-				'image' => 'unknown.png',
-				'website' => 'https://github.com/KazutoSensei',
-				'contribution' => 'Idea Contributor & Tester'
+				'name' => 'Lee Yunseok',
+				'image' => 'lee_yunseok.png',
+				'website' => 'https://lee-yunseok.github.io/',
+				'contribution' => 'Korean Translator'
+			],
+			[
+				'name' => 'Medow',
+				'image' => 'medow.png',
+				'website' => '#',
+				'contribution' => 'Romanian Translator'
 			],
 			[
 				'name' => 'Michael Jay Tucker',
 				'image' => 'michael_jay_tucker.jpeg',
-				'website' => 'https://github.com/KazutoSensei',
+				'website' => '#',
 				'contribution' => 'Sponsor'
 			],
 			[
@@ -132,7 +138,7 @@
 			[
 				'name' => 'Mr. Two Hand',
 				'image' => 'unknown.png',
-				'website' => 'https://github.com/KazutoSensei',
+				'website' => '#',
 				'contribution' => 'Idea Contributor & Tester'
 			],
 			[
@@ -150,7 +156,7 @@
 			[
 				'name' => 'Piiritaja',
 				'image' => 'unknown.png',
-				'website' => 'https://github.com/KazutoSensei',
+				'website' => '#',
 				'contribution' => 'Tester'
 			],
 			[
@@ -178,16 +184,28 @@
 				'contribution' => 'German Translator'
 			],
 			[
-				'name' => 'Tom',
-				'image' => 'unknown.png',
-				'website' => 'https://www.patreon.com/user/creators?u=3650324',
-				'contribution' => 'Sponsor'
+				'name' => 'Tom Nguyen',
+				'image' => 'tom_nguyen.jpg',
+				'website' => 'https://www.tomnguyen.co.uk/',
+				'contribution' => 'Sponsor, Idea Contributor & Tester'
+			],
+			[
+				'name' => 'Waffle<wbr>Meido',
+				'image' => 'wafflemeido.png',
+				'website' => 'https://wafflemeido.art/',
+				'contribution' => 'Artist commissioned for original characters'
 			],
 			[
 				'name' => 'Xiony',
 				'image' => 'xiony.png',
 				'website' => 'https://github.com/xiony',
 				'contribution' => 'Tester'
+			],
+			[
+				'name' => 'Yakauleu Uladzislau',
+				'image' => 'unknown.png',
+				'website' => 'https://github.com/wiedymi',
+				'contribution' => 'Belarusian Translator'
 			],
 			[
 				'name' => 'Zhou Cong Art',

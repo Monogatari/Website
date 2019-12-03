@@ -48,7 +48,7 @@ $_ready (() => {
 	}
 
 	if (window.location.search.indexOf ('tags')) {
-		console.log (filter);
+		//console.log (filter);
 		// tags = query.filter (s => s.name === 'tags').value.split ('+');
 		// filter ();
 	}
@@ -80,8 +80,5 @@ $_ready (() => {
 		const value = $_('.search').value ().toLowerCase ();
 		filter (value);
 	});
-
-
-
 
 });

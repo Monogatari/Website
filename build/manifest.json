@@ -5,7 +5,7 @@
 	"theme_color": "#f16272",
 	"orientation": "any",
 	"display": "standalone",
-	"start_url": "index.html",
+	"start_url": "/",
 	"icons": [
 		{
 			"src": "assets/icons/icon_48x48.png",
