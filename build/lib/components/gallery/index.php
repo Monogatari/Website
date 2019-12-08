@@ -9,6 +9,17 @@
 			parent::__construct ();
 
 			$this -> games = [
+
+				[
+					'name' => 'A Snake in my bed',
+					'description' => 'After a series of unfortunate events, a young man named Pidrù finds himself responsible for the vanishing of his boss,  Diégo (aka the DILF). In his quest to bring him back, he is helped by weird spirits from pre-colombian civilizations and a strange free-spirited boy named Ángel. Also, his cat!',
+					'url' => 'https://alixlepinay.itch.io/a-snake-in-my-bed',
+					'website' => 'https://www.patreon.com/taularedona',
+					'cover' => 'a-snake-in-my-bed.jpg',
+					'creator' => 'Alix Lepinay',
+					'tags' => ['dating simulator', 'lgbt', 'erotic']
+				],
+
 				[
 					'name' => 'Arizona 9',
 					'description' => 'Arizona 9 is a casual game that reworks the event of Brisenia Flores’s death at the hands of border vigilantes into a hopeful tale.',
@@ -72,6 +83,16 @@
 					'cover' => 'milfy-city.png',
 					'creator' => 'ICSTOR',
 					'tags' => ['nsfw', 'dating simulator']
+				],
+
+				[
+					'name' => 'Necromancy Nancy',
+					'description' => 'A dark comedy about an elite necromancy prep school and Nancy, the chosen one. She may not be the best, but she thinks she is.',
+					'url' => 'https://www.playnecromancynancy.com/',
+					'website' => 'https://www.playnecromancynancy.com/',
+					'cover' => 'necromancy-nancy.jpg',
+					'creator' => 'Adelaide & Jay Oakley ',
+					'tags' => ['lgbt', 'comedy', 'paranormal']
 				],
 
 				[
