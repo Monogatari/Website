@@ -53,6 +53,15 @@ small {
 		background: rgb(0, 184, 212);
 		color: #ffffff;
 		padding: 1rem;
+
+		& span {
+			margin-bottom: 0.1rem;
+			display: block;
+		}
+
+		&.nightly {
+			background: #5856d6;
+		}
 	}
 }
 
@@ -380,6 +389,15 @@ button {
 
 	button& {
 		background: rgb(31, 101, 214);
+		color: #fff;
+	}
+}
+
+.community {
+	color: #ff5e3a;
+
+	button& {
+		background: #ff5e3a;
 		color: #fff;
 	}
 }
