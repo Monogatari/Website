@@ -15,10 +15,10 @@
     "build:css": "yarn parcel build ./src/index.css --out-file index.css --out-dir ./build/style --no-cache --no-source-maps"
   },
   "devDependencies": {
-    "@babel/core": "^7.7.4",
+    "@babel/core": "^7.7.5",
     "@babel/plugin-syntax-object-rest-spread": "^7.7.4",
     "@babel/polyfill": "^7.7.0",
-    "@babel/preset-env": "^7.7.4",
+    "@babel/preset-env": "^7.7.6",
     "autoprefixer": "^9.7.3",
     "eslint": "^6.7.2",
     "htmlhint": "^0.11.0",
