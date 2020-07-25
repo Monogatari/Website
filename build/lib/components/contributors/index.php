@@ -52,6 +52,12 @@
 				'contribution' => 'Sponsor, Idea Contributor & Tester'
 			],
 			[
+				'name' => 'Darckoune',
+				'image' => 'darckoune.jpeg',
+				'website' => 'https://github.com/darckoune',
+				'contribution' => 'Code Contributor & Tester'
+			],
+			[
 				'name' => 'Dragoon HP',
 				'image' => 'unknown.png',
 				'website' => '#',
@@ -97,7 +103,7 @@
 				'name' => 'Kagami Hiiragi',
 				'image' => 'kagami_hiiragi.png',
 				'website' => 'https://github.com/Kagami',
-				'contribution' => 'Code Developer & Tester'
+				'contribution' => 'Code Contributor & Tester'
 			],
 			[
 				'name' => 'Kazuto Sensei',
@@ -116,6 +122,18 @@
 				'image' => 'lee_yunseok.png',
 				'website' => 'https://lee-yunseok.github.io/',
 				'contribution' => 'Korean Translator'
+			],
+			[
+				'name' => 'Maxwell P. Brickner',
+				'image' => 'mbrickn.png',
+				'website' => 'https://maxbrickner.com/',
+				'contribution' => 'Code Contributor'
+			],
+			[
+				'name' => 'Mdabrowski',
+				'image' => 'mdabrowski.jpeg',
+				'website' => 'https://github.com/mdabrowski-eu',
+				'contribution' => 'Code Contributor'
 			],
 			[
 				'name' => 'Medow',
@@ -166,6 +184,12 @@
 				'contribution' => 'Community Manager, Idea Contributor, Documenter & Tester'
 			],
 			[
+				'name' => 'Renoa',
+				'image' => 'renoa.jpeg',
+				'website' => 'https://github.com/renoa',
+				'contribution' => 'Arabic Translator'
+			],
+			[
 				'name' => 'Ruolin Zheng',
 				'image' => 'ruolin_zheng.png',
 				'website' => 'https://github.com/RuolinZheng08',
@@ -176,6 +200,12 @@
 				'image' => 'sergey_kuznetsov.jpeg',
 				'website' => 'https://t.me/amaimersion',
 				'contribution' => 'Russian Translator & Tester'
+			],
+			[
+				'name' => 'ShinProg (Logan Tann)',
+				'image' => 'shinprog.jpeg',
+				'website' => 'https://kagescan.legtux.org/',
+				'contribution' => 'French Translator & Code Contributor'
 			],
 			[
 				'name' => 'Stephen Lavelle',

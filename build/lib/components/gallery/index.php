@@ -39,6 +39,19 @@
 					'creator' => 'Lucas Vially',
 					'tags' => ['casual', 'ghosts', 'hand drawn', 'kinetic novel', 'monster', 'vampire', 'zombies']
 				],
+				[
+					'name' => 'Defying Heaven\'s Will',
+					'description' => 'Heaven’s will is unpredictable—when his Shidi was charged with the murder of his fellow sect members, Zhou Linqi is faced with the biggest trial of his life.
+
+					Who is lying and who is telling the truth?
+
+					An obscure note and a mysterious voice that Zhou Linqi heard before losing his memories...Is it possible that they are connected to the case?',
+					'url' => 'https://melimeli.itch.io/defying-heavens-will',
+					'website' => 'https://twitter.com/Melimelidev',
+					'cover' => 'defying-heavens-will.jpg',
+					'creator' => 'Melimeli',
+					'tags' => ['boys love', 'detective', 'fantasy', 'murder mystery', 'romance', 'xianxia', 'yaoi', 'lgbt']
+				],
 
 				[
 					'name' => 'Dreams of Desire',
@@ -93,6 +106,16 @@
 					'cover' => 'necromancy-nancy.jpg',
 					'creator' => 'Adelaide & Jay Oakley ',
 					'tags' => ['lgbt', 'comedy', 'paranormal']
+				],
+
+				[
+					'name' => 'Project Cells',
+					'description' => 'Project Cells is a visualnovel / interactive novel project featuring different characters whose objective is to survive on an island and find their partners!',
+					'url' => 'http://kevinrolinbenitez.com/project-cells/',
+					'website' => 'https://kevinrolinbenitez.com/',
+					'cover' => 'project-cells.jpg',
+					'creator' => 'KRB Hylian',
+					'tags' => []
 				],
 
 				[

@@ -20,7 +20,7 @@ $_ready (() => {
 		$_(element).find ('span').text (mail);
 	});
 
-	$_('.nav__menu-icon').click (function () {
+	$_('nav').on ('click', '.nav__menu-icon', function () {
 		$_(this).closest ('ul').toggleClass ('nav__content-list--active');
 	});
 
@@ -30,8 +30,23 @@ $_ready (() => {
 		}
 	});
 
-	$_('.donate').click (() => {
+	$_('.paypal').click (() => {
 		$_('.hidden form').get (0).submit ();
+	});
+
+	$_('[data-content="sponsor-method"].crypto').click(function () {
+		const method = this.classList[0];
+		if ($_(this).hasClass('crypto')) {
+			$_(`[data-coin="${method}"]`).addClass ('active');
+			$_('.modal.cryptocurrencies').addClass ('modal--active');
+		}
+	});
+
+	$_('.modal.cryptocurrencies').click(function (event) {
+		if (!$_(event.target).closestParent ('.modal__content')) {
+			$_('[data-coin]').removeClass ('active');
+			$_('.modal.cryptocurrencies').removeClass ('modal--active');
+		}
 	});
 
 	function filter (value) {
