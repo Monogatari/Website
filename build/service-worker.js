@@ -4,7 +4,7 @@ var name = 'Monogatari';
 
 // The version of the cache, changing this will force everything to be cached
 // again.
-var version = '0.2.3';
+var version = '0.2.4';
 
 var files = [
 

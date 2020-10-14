@@ -43,7 +43,7 @@ $_ready (() => {
 	});
 
 	$_('.modal.cryptocurrencies').click(function (event) {
-		if (!$_(event.target).closestParent ('.modal__content')) {
+		if (!$_(event.target).closestParent ('.modal__content').exists ()) {
 			$_('[data-coin]').removeClass ('active');
 			$_('.modal.cryptocurrencies').removeClass ('modal--active');
 		}
