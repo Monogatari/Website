@@ -40,13 +40,18 @@ small {
 
 .lead {
 	font-size: 1.2rem;
+	max-width: 1000px;
+	margin: 1rem auto;
 }
 
 .hero {
-
 	& img {
 		max-height: 15rem;
 		filter: drop-shadow(0px 5px 12px rgba(0, 0, 0, 0.2));
+	}
+
+	& .lead {
+		margin-bottom: 4rem;
 	}
 
 	& button {
