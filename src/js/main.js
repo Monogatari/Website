@@ -96,4 +96,9 @@ $_ready (() => {
 		filter (value);
 	});
 
+	$_('[data-event]').click (function () {
+		const event = $_(this).data ('event');
+		window.plausible (event);
+	});
+
 });

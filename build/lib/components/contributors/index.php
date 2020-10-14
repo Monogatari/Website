@@ -5,7 +5,6 @@
         // Set what page and template should be used to render this template.
         function __construct () {
 			parent::__construct ();
-
 		}
 
 		public $contributors = [
@@ -66,7 +65,7 @@
 			[
 				'name' => 'Fernando Saavedra',
 				'image' => 'fernando_saavedra.jpg',
-				'website' => 'https://github.com/fsvdr',
+				'website' => 'https://fsvdr.me',
 				'contribution' => 'Consultant & Idea Contributor'
 			],
 			[
@@ -80,6 +79,12 @@
 				'image' => 'ign1ght.png',
 				'website' => 'https://github.com/ign1ght',
 				'contribution' => 'Dutch Translator'
+			],
+			[
+				'name' => 'Izra',
+				'image' => 'izra.png',
+				'website' => '#',
+				'contribution' => 'Tester'
 			],
 			[
 				'name' => 'Jiun Wei Chia',
@@ -152,6 +157,12 @@
 				'image' => 'mickey_sanchez.png',
 				'website' => 'https://github.com/mickeysanchez',
 				'contribution' => 'Code Contributor'
+			],
+			[
+				'name' => 'Morf',
+				'image' => 'unknown.png',
+				'website' => '#',
+				'contribution' => 'Tester'
 			],
 			[
 				'name' => 'Mr. Two Hand',

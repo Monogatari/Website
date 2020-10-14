@@ -90,6 +90,8 @@
 			}
 		</style>
 
+		<script async defer data-domain="monogatari.io" src="https://plausible.io/js/plausible.js"></script>
+		<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 	</head>
 	<body>
 		<div class="hidden">
@@ -100,21 +102,22 @@
 			<img alt="" border="0" src="https://www.paypal.com/en_MX/i/scr/pixel.gif" width="1" height="1" />
 			</form>
 		</div>
-		<nav class="nav nav--top--tablet card--depth--2 nav--fixed">
+		<nav class="nav nav--top--tablet card card--depth--2">
 			<header class="nav__header nav--top__header">
 				<a href="/">
 					<img src="assets/images/logo-white.svg" class="nav__header__logo nav--top__header__logo" alt="Monogatari Logo">
 					<h1 class="nav__header__title nav--top__header__title" >Monogatari</h1>
 				</a>
 			</header>
-			<i class="nav__menu-icon fas fa-bars"></i>
+			<span class="nav__menu-icon"><i class=" fas fa-bars"></i></span>
 			<ul class="nav__content-list nav__content-list--full">
-				<li class="nav__content-list__item"><a href="/">Home</a></li>
-				<li class="nav__content-list__item"><a href="/demo">Play Demo</a></li>
-				<li class="nav__content-list__item"><a href="/gallery">Game Gallery</a></li>
-				<li class="nav__content-list__item"><a href="https://developers.monogatari.io/documentation" target="_blank" rel="noopener noreferrer">Documentation</a></li>
-				<li class="nav__content-list__item"><a href="/#get-involved">Get Involved</a></li>
-				<li class="nav__content-list__item"><a href="/contributors">Contributors</a></li>
+				<li class="nav__content-list__item"><a href="/"><span class="nav__content-list__item__icon fas fa-home"></span> Home</a></li>
+				<li class="nav__content-list__item"><a href="/demo"><span class="nav__content-list__item__icon fas fa-play"></span> Demo</a></li>
+				<li class="nav__content-list__item"><a href="/gallery"><span class="nav__content-list__item__icon fas fa-gamepad"></span> Gallery</a></li>
+				<li class="nav__content-list__item"><a href="https://developers.monogatari.io/documentation" target="_blank" rel="noopener noreferrer"><span class="nav__content-list__item__icon fas fa-book"></span> Documentation</a></li>
+				<li class="nav__content-list__item"><a href="/#get-involved"><span class="nav__content-list__item__icon fas fa-hands-helping"></span>  Get Involved</a></li>
+				<li class="nav__content-list__item"><a href="/#sponsor" data-event="Menu Sponsor"><span class="nav__content-list__item__icon fas fa-donate"></span> Sponsor</a></li>
+				<li class="nav__content-list__item"><a href="/contributors"><span class="nav__content-list__item__icon fas fa-users"></span>  Contributors</a></li>
 			</ul>
 		</nav>
 		{>{content}<}

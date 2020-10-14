@@ -117,7 +117,15 @@
 					'creator' => 'KRB Hylian',
 					'tags' => []
 				],
-
+				[
+					'name' => 'Retaining\'s Memories',
+					'description' => 'An isolated monster spawned in a dark place on August 15th. This monster knew nothing, and tried to learn about herself and about humans. Eventually, she left this sinister world. Was trying to understand humans a good idea, in the end?',
+					'url' => 'https://kagescan.legtux.org/fangame/play/',
+					'website' => 'https://kagescan.legtux.org/fangame/en/',
+					'cover' => 'retainings-memories.jpg',
+					'creator' => 'Kagescan\'s Team',
+					'tags' => []
+				],
 				[
 					'name' => 'Urban Voyeur',
 					'description' => 'You play as a young successful male doctor who has just moved in to New York to work in a private clinic.
