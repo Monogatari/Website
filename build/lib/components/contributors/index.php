@@ -123,9 +123,9 @@
 				'contribution' => 'Idea Contributor & Tester'
 			],
 			[
-				'name' => 'Lee Yunseok',
+				'name' => 'Yi Yunseok',
 				'image' => 'lee_yunseok.png',
-				'website' => 'https://lee-yunseok.github.io/',
+				'website' => 'https://yi-yunseok.github.io/',
 				'contribution' => 'Korean Translator'
 			],
 			[
